@@ -31,6 +31,13 @@
             text-align: center;
         }
 
+        .one-liner {
+          font-weight:300;
+          opacity:0.7;
+          font-size:15px;
+          padding: 0 100px;
+        }
+
         .social-ul li {
             display: inline-block;
             padding-right: 5px;
@@ -50,7 +57,7 @@
         }
 
         .project-container {
-            height: 250px;
+            height: 280px;
         }
 
         .custom-header {
@@ -148,7 +155,7 @@
         }
 
         .reviews {
-            max-height: 350px;
+            max-height: 650px;
         }
 
         .reviews .card {
@@ -172,12 +179,13 @@
         }
 
         .details .icon {
-          font-size: 22px;
-          font-weight: 700;
-          margin-bottom: 8px;
+            font-size: 22px;
+            font-weight: 700;
+            margin-bottom: 8px;
         }
+
         .details .content {
-            display:block;
+            display: block;
             font-size: 16px;
             font-weight: 300;
             margin-bottom: 12px;
@@ -204,14 +212,25 @@
 
         @media screen and (max-width: 600px) {
             .stack {
-                zoom: 50%;
+                zoom: 30%;
+            }
+            .one-liner {
+              padding: 0;
+            }
+            .project-container {
+                height: 300px;
+            }
+            .reviews {
+                max-height: 700px;
+                height:700px !important;
+            }
+            .reviews .card {
+                height: 90%;
             }
         }
 
         @media screen and (max-width: 400px) {
-            .stack {
-                zoom: 30%;
-            }
+            
         }
     </style>
 
@@ -240,7 +259,7 @@
                                     <li><a href="https://stackoverflow.com/users/7743819/rakesh" target="_blank"><i class="fab fa-stack-overflow"></i></a></li>
                                 </ul>
                             </div>
-                            <p style="font-weight:300;opacity:0.7;font-size:15px;padding: 0 100px;">I am a software engineer with 8 years of experience, working on both backend and frontend technologies. I am a full stack developer and worked on various mid-sized and large web applications. I am always open to new technologies
+                            <p class="one-liner">I am a software engineer with 8 years of experience, working on both backend and frontend technologies. I am a full stack developer and worked on various mid-sized and large web applications. I am always open to new technologies
                                 and interested to work on SAAS based applications.</p>
                         </div>
                         <div class="card-action" style="text-align: center;">
@@ -278,14 +297,14 @@
                                             <div class="chips" style="border-bottom:none;">
                                                 <div class="chip">Java</div>
                                                 <div class="chip">Javascript</div>
-                                                <div class="chip">App Engine</div>
+                                                <div class="chip">Spring</div>
                                                 <div class="chip">SASS</div>
                                                 <div class="chip">HTML5</div>
                                                 <div class="chip">Ext JS</div>
                                                 <div class="chip">Jquery</div>
-                                                <div class="chip">Spring</div>
                                                 <div class="chip">Oracle</div>
                                                 <div class="chip">Fusioncharts</div>
+                                                <div class="chip">SQL</div>
                                             </div>
                                             <div class="center-align timeperiod project-sub-header">Roles and Responsibilities</div>
                                             <table class="striped">
@@ -300,7 +319,11 @@
                                                     </tr>
                                                     <tr>
                                                         <td>
-                                                            <i class="far fa-hand-point-right responsibility"></i>Worked on implementing a feature to maintain the measures (related to supply chain).</td>
+                                                            <i class="far fa-hand-point-right responsibility"></i>Worked on implementing the Notifications.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <i class="far fa-hand-point-right responsibility"></i>Worked on implementing a feature to maintain the measures and exception rule definitions (related to supply chain).</td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -375,117 +398,71 @@
                         <div style="padding: 30px 20px;margin-top: 2px;">
                             <h6 class="project-header">R4E-E2E</h6>
                             <div class="center-align timeperiod"><i class="fas fa-calendar-alt" style="margin-right:15px;"></i>Jun 2015 - Dec 2016</div>
-                            <p class="project-content center-text">One common UI experience across Demand-Supply-S&OP with process orchestration.</p>
+                            <p class="project-content center-text">An Automation Framework for UI, REST API, Thrift & Mobile- Android & iOS.</p>
                             <div class="row center-text">
-                                <a class="btn cyan darken-2 waves-effect waves-light btn-primary custom-btn modal-trigger" href="#mplone">Read More</a>
+                                <a class="btn cyan darken-2 waves-effect waves-light btn-primary custom-btn modal-trigger" href="#r4e-e2e">Read More</a>
 
-                                <div id="mplone" class="modal">
+                                <div id="r4e-e2e" class="modal">
                                     <div class="modal-content">
                                         <div style="padding: 0px 20px;margin-top: 2px;">
                                             <a href="#0" target="_blank" class="project-modal-close"><i class="fas fa-times"></i></a>
-                                            <h6 class="project-header">MPL One</h6>
+                                            <h6 class="project-header">R4E-E2E</h6>
                                             <div class="center-align timeperiod project-sub-header">Stack</div>
                                             <div class="chips" style="border-bottom:none;">
-                                                <div class="chip">Java</div>
+                                                <div class="chip">Node JS</div>
                                                 <div class="chip">Javascript</div>
-                                                <div class="chip">App Engine</div>
-                                                <div class="chip">SASS</div>
-                                                <div class="chip">HTML5</div>
-                                                <div class="chip">Ext JS</div>
-                                                <div class="chip">Jquery</div>
-                                                <div class="chip">Spring</div>
-                                                <div class="chip">Oracle</div>
-                                                <div class="chip">Fusioncharts</div>
+                                                <div class="chip">Protactor</div>
+                                                <div class="chip">Selenium</div>
+                                                    <div class="chip">CucumberJS</div>
+                                                    <div class="chip">ChaiJS</div>
+                                                    <div class="chip">Q</div>
+                                                    <div class="chip">Jenkins</div>
+                                                    <div class="chip">Appium</div>
+                                                    <div class="chip">Nunjucks</div>
+                                                    <div class="chip">Supertest</div>
+                                                    <div class="chip">Gulp</div>
+                                                    <div class="chip">MaterializeCSS</div>
+                                                    <div class="chip">ReactJS</div>
+                                                    <div class="chip">ElasticSearch</div>
+                                                    <div class="chip">Kibana</div>
+
+                                                <div class="center-align timeperiod project-sub-header">Roles and Responsibilities</div>
+                                                <table class="striped">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="far fa-hand-point-right responsibility"></i>Built the complete framework from scratch bringing all different automation suites into one common platform which is behavioral oriented.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="far fa-hand-point-right responsibility"></i>Setup the automation teams in globally.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="far fa-hand-point-right responsibility"></i>Built an environment on cloud which runs thousands of scenarios across multiple environments every day and archives the reports, which
+                                                                also allows any person to trigger any job respective to the services they have been working.</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
                                             </div>
-                                            <div class="center-align timeperiod project-sub-header">Roles and Responsibilities</div>
-                                            <table class="striped">
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <i class="far fa-hand-point-right responsibility"></i>Part of the team formed for developing the product from the scratch.</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <i class="far fa-hand-point-right responsibility"></i>Worked on implementing customizable dashboard.</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <i class="far fa-hand-point-right responsibility"></i>Worked on implementing a feature to maintain the measures (related to supply chain).</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <!-- Credential Bot -->
-                <div class="col s12 m6">
-                    <div class="card project-container">
-                        <div style="padding: 30px 20px;margin-top: 2px;">
-                            <h6 class="project-header">Credential Bot</h6>
-                            <div class="center-align timeperiod"><i class="fas fa-calendar-alt" style="margin-right:15px;"></i>Jun 2015 - Dec 2016</div>
-                            <p class="project-content center-text">One common UI experience across Demand-Supply-S&OP with process orchestration.</p>
-                            <div class="row center-text">
-                                <a class="btn cyan darken-2 waves-effect waves-light btn-primary custom-btn modal-trigger" href="#mplone">Read More</a>
-
-                                <div id="mplone" class="modal">
-                                    <div class="modal-content">
-                                        <div style="padding: 0px 20px;margin-top: 2px;">
-                                            <a href="#0" target="_blank" class="project-modal-close"><i class="fas fa-times"></i></a>
-                                            <h6 class="project-header">MPL One</h6>
-                                            <div class="center-align timeperiod project-sub-header">Stack</div>
-                                            <div class="chips" style="border-bottom:none;">
-                                                <div class="chip">Java</div>
-                                                <div class="chip">Javascript</div>
-                                                <div class="chip">App Engine</div>
-                                                <div class="chip">SASS</div>
-                                                <div class="chip">HTML5</div>
-                                                <div class="chip">Ext JS</div>
-                                                <div class="chip">Jquery</div>
-                                                <div class="chip">Spring</div>
-                                                <div class="chip">Oracle</div>
-                                                <div class="chip">Fusioncharts</div>
-                                            </div>
-                                            <div class="center-align timeperiod project-sub-header">Roles and Responsibilities</div>
-                                            <table class="striped">
-                                                <tbody>
-                                                    <tr>
-                                                        <td>
-                                                            <i class="far fa-hand-point-right responsibility"></i>Part of the team formed for developing the product from the scratch.</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <i class="far fa-hand-point-right responsibility"></i>Worked on implementing customizable dashboard.</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <i class="far fa-hand-point-right responsibility"></i>Worked on implementing a feature to maintain the measures (related to supply chain).</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
-                </div>
-                <div class="row display-none" id="test">
                     <!-- GCP Billing Analysis -->
                     <div class="col s12 m6">
                         <div class="card project-container">
                             <div style="padding: 30px 20px;margin-top: 2px;">
                                 <h6 class="project-header">GCP Billing Analysis</h6>
                                 <div class="center-align timeperiod"><i class="fas fa-calendar-alt" style="margin-right:15px;"></i>Jun 2015 - Dec 2016</div>
-                                <p class="project-content center-text">One common UI experience across Demand-Supply-S&OP with process orchestration.</p>
+                                <p class="project-content center-text">A billing analysis for Google Cloud for various personas.</p>
                                 <div class="row center-text">
-                                    <a class="btn cyan darken-2 waves-effect waves-light btn-primary custom-btn modal-trigger" href="#mplone">Read More</a>
+                                    <a class="btn cyan darken-2 waves-effect waves-light btn-primary custom-btn modal-trigger" href="#gcp">Read More</a>
 
-                                    <div id="mplone" class="modal">
+                                    <div id="gcp" class="modal">
                                         <div class="modal-content">
                                             <div style="padding: 0px 20px;margin-top: 2px;">
                                                 <a href="#0" target="_blank" class="project-modal-close"><i class="fas fa-times"></i></a>
@@ -494,14 +471,22 @@
                                                 <div class="chips" style="border-bottom:none;">
                                                     <div class="chip">Java</div>
                                                     <div class="chip">Javascript</div>
+                                                    <div class="chip">Gradle</div>
+                                                    <div class="chip">Node JS</div>
                                                     <div class="chip">App Engine</div>
-                                                    <div class="chip">SASS</div>
-                                                    <div class="chip">HTML5</div>
-                                                    <div class="chip">Ext JS</div>
-                                                    <div class="chip">Jquery</div>
-                                                    <div class="chip">Spring</div>
-                                                    <div class="chip">Oracle</div>
-                                                    <div class="chip">Fusioncharts</div>
+                                                    <div class="chip">Big Query</div>
+                                                    <div class="chip">Data Pipelines</div>
+                                                    <div class="chip">Angular 2</div>
+                                                    <div class="chip">Angular 2 Material</div>
+                                                    <div class="chip">Jacoco</div>
+                                                    <div class="chip">Protractor</div>
+                                                    <div class="chip">Karma</div>
+                                                    <div class="chip">Frisby JS</div>
+                                                    <div class="chip">Wiremock</div>
+                                                    <div class="chip">ChartsJS</div>
+                                                    <div class="chip">Jasmine</div>
+                                                    <div class="chip">Swagger</div>
+                                                    <div class="chip">Angular CLI</div>
                                                 </div>
                                                 <div class="center-align timeperiod project-sub-header">Roles and Responsibilities</div>
                                                 <table class="striped">
@@ -512,11 +497,19 @@
                                                         </tr>
                                                         <tr>
                                                             <td>
-                                                                <i class="far fa-hand-point-right responsibility"></i>Worked on implementing customizable dashboard.</td>
+                                                                <i class="far fa-hand-point-right responsibility"></i>Developed the microservice to handle the cloud billing data operations.</td>
                                                         </tr>
                                                         <tr>
                                                             <td>
-                                                                <i class="far fa-hand-point-right responsibility"></i>Worked on implementing a feature to maintain the measures (related to supply chain).</td>
+                                                                <i class="far fa-hand-point-right responsibility"></i>Developed the UI using materialize css.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="far fa-hand-point-right responsibility"></i>Part of test driven development.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="far fa-hand-point-right responsibility"></i>Handled end to end testing.</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
@@ -528,1042 +521,1232 @@
                         </div>
                     </div>
 
-                    <!-- DCS -->
-                    <div class="col s12 m6">
-                        <div class="card project-container">
-                            <div style="padding: 30px 20px;margin-top: 2px;">
-                                <h6 class="project-header">DCS (Distribution Centric Supply Chain)</h6>
-                                <div class="center-align timeperiod"><i class="fas fa-calendar-alt" style="margin-right:15px;"></i>Jun 2015 - Dec 2016</div>
-                                <p class="project-content center-text">One common UI experience across Demand-Supply-S&OP with process orchestration.</p>
-                                <div class="row center-text">
-                                    <a class="btn cyan darken-2 waves-effect waves-light btn-primary custom-btn modal-trigger" href="#mplone">Read More</a>
+                    <div class="row display-none" id="test">
 
-                                    <div id="mplone" class="modal">
-                                        <div class="modal-content">
-                                            <div style="padding: 0px 20px;margin-top: 2px;">
-                                                <a href="#0" target="_blank" class="project-modal-close"><i class="fas fa-times"></i></a>
-                                                <h6 class="project-header">DCS (Distribution Centric Supply Chain)</h6>
-                                                <div class="center-align timeperiod project-sub-header">Stack</div>
-                                                <div class="chips" style="border-bottom:none;">
-                                                    <div class="chip">Java</div>
-                                                    <div class="chip">Javascript</div>
-                                                    <div class="chip">App Engine</div>
-                                                    <div class="chip">SASS</div>
-                                                    <div class="chip">HTML5</div>
-                                                    <div class="chip">Ext JS</div>
-                                                    <div class="chip">Jquery</div>
-                                                    <div class="chip">Spring</div>
-                                                    <div class="chip">Oracle</div>
-                                                    <div class="chip">Fusioncharts</div>
+                      <!-- Credential Bot -->
+                      <div class="col s12 m6">
+                          <div class="card project-container">
+                              <div style="padding: 30px 20px;margin-top: 2px;">
+                                  <h6 class="project-header">Credential Bot</h6>
+                                  <div class="center-align timeperiod"><i class="fas fa-calendar-alt" style="margin-right:15px;"></i>Jun 2015 - Dec 2016</div>
+                                  <p class="project-content center-text">A bot to validate the credentials across different sources and handles reporting and monitoring.</p>
+                                  <div class="row center-text">
+                                      <a class="btn cyan darken-2 waves-effect waves-light btn-primary custom-btn modal-trigger" href="#credentialbot">Read More</a>
+
+                                      <div id="credentialbot" class="modal">
+                                          <div class="modal-content">
+                                              <div style="padding: 0px 20px;margin-top: 2px;">
+                                                  <a href="#0" target="_blank" class="project-modal-close"><i class="fas fa-times"></i></a>
+                                                  <h6 class="project-header">MPL One</h6>
+                                                  <div class="center-align timeperiod project-sub-header">Stack</div>
+                                                  <div class="chips" style="border-bottom:none;">
+                                                      <div class="chip">Node JS</div>
+                                                      <div class="chip">Javascript</div>
+                                                      <div class="chip">Protractor</div>
+                                                      <div class="chip">Jenkins</div>
+                                                      <div class="chip">Chrome-Headless</div>
+                                                  </div>
+                                                  <div class="center-align timeperiod project-sub-header">Roles and Responsibilities</div>
+                                                  <table class="striped">
+                                                      <tbody>
+                                                          <tr>
+                                                              <td>
+                                                                  <i class="far fa-hand-point-right responsibility"></i>Built the complete product from scratch.</td>
+                                                          </tr>
+                                                      </tbody>
+                                                  </table>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+
+                        <!-- DCS -->
+                        <div class="col s12 m6">
+                            <div class="card project-container">
+                                <div style="padding: 30px 20px;margin-top: 2px;">
+                                    <h6 class="project-header">DCS (Distribution Centric Supply Chain)</h6>
+                                    <div class="center-align timeperiod"><i class="fas fa-calendar-alt" style="margin-right:15px;"></i>Jun 2015 - Dec 2016</div>
+                                    <p class="project-content center-text">Create a Solidified brand for Distribution Centric Supply Chain. Align the UI’s of key products to increase cohesive sales demos.</p>
+                                    <div class="row center-text">
+                                        <a class="btn cyan darken-2 waves-effect waves-light btn-primary custom-btn modal-trigger" href="#dcs">Read More</a>
+
+                                        <div id="dcs" class="modal">
+                                            <div class="modal-content">
+                                                <div style="padding: 0px 20px;margin-top: 2px;">
+                                                    <a href="#0" target="_blank" class="project-modal-close"><i class="fas fa-times"></i></a>
+                                                    <h6 class="project-header">DCS (Distribution Centric Supply Chain)</h6>
+                                                    <div class="center-align timeperiod project-sub-header">Stack</div>
+                                                    <div class="chips" style="border-bottom:none;">
+                                                        <div class="chip">Java</div>
+                                                        <div class="chip">Javascript</div>
+                                                        <div class="chip">SASS</div>
+                                                        <div class="chip">HTML5</div>
+                                                        <div class="chip">CSS3</div>
+                                                        <div class="chip">Jquery</div>
+                                                        <div class="chip">Dhtmlx</div>
+                                                        <div class="chip">Ext JS</div>
+                                                    </div>
+                                                    <div class="center-align timeperiod project-sub-header">Roles and Responsibilities</div>
+                                                    <table class="striped">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i>Part of the team formed for developing the product from the scratch.</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i>Part of the research of enhancing the UI’s of the JDA Applications as per the latest standards.</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i>Worked in converting the entire platform style hardcoded styling to SASS based approach.</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i>Restyled the Header, Popup, Grid, Alert/Confirm dialogs and other UI components as per the UX standards.</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i>Worked on the research of the converting the window popups to modal dialogs across the JDA applications and also implemented the
+                                                                    same in most of the platform pages.</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i>Implemented a Dynamic Hierarchy component which serves huge datasets for the hierarchies.</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i>Worked on PSR of the Hierarchy component.</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i>Implemented the UI part of the feature called Manage User Objects.</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i>Stood as the single point of contact for the application teams relative to this project.</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
                                                 </div>
-                                                <div class="center-align timeperiod project-sub-header">Roles and Responsibilities</div>
-                                                <table class="striped">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>
-                                                                <i class="far fa-hand-point-right responsibility"></i>Part of the team formed for developing the product from the scratch.</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <i class="far fa-hand-point-right responsibility"></i>Worked on implementing customizable dashboard.</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <i class="far fa-hand-point-right responsibility"></i>Worked on implementing a feature to maintain the measures (related to supply chain).</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- JDA Platform -->
+                        <div class="col s12 m6">
+                            <div class="card project-container">
+                                <div style="padding: 30px 20px;margin-top: 2px;">
+                                    <h6 class="project-header">JDA Platform (Webworks)</h6>
+                                    <div class="center-align timeperiod"><i class="fas fa-calendar-alt" style="margin-right:15px;"></i>Jun 2015 - Dec 2016</div>
+                                    <p class="project-content center-text">Platform for entire JDA applications. It's an MVC driven framework, which includes Security, User Interface Framework, Architecture & predefined components etc.,</p>
+                                    <div class="row center-text">
+                                        <a class="btn cyan darken-2 waves-effect waves-light btn-primary custom-btn modal-trigger" href="#webworks">Read More</a>
+
+                                        <div id="webworks" class="modal">
+                                            <div class="modal-content">
+                                                <div style="padding: 0px 20px;margin-top: 2px;">
+                                                    <a href="#0" target="_blank" class="project-modal-close"><i class="fas fa-times"></i></a>
+                                                    <h6 class="project-header">JDA Platform (Webworks)</h6>
+                                                    <div class="center-align timeperiod project-sub-header">Stack</div>
+                                                    <div class="chips" style="border-bottom:none;">
+                                                        <div class="chip">Java</div>
+                                                        <div class="chip">Javascript</div>
+                                                        <div class="chip">J2EE</div>
+                                                        <div class="chip">Dhtmlx</div>
+                                                        <div class="chip">Log4J</div>
+                                                        <div class="chip">SLF4J</div>
+                                                        <div class="chip">Weblogic</div>
+                                                        <div class="chip">Websphere</div>
+                                                        <div class="chip">Ant</div>
+                                                        <div class="chip">jQuery</div>
+                                                        <div class="chip">ExtJS</div>
+                                                        <div class="chip">Jackson</div>
+                                                        <div class="chip">Oracle</div>
+                                                    </div>
+                                                    <div class="center-align timeperiod project-sub-header">Roles and Responsibilities</div>
+                                                    <table class="striped">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i>Implemented a Copy Paste to/from Excel feature for the platform Flexible Editor feature, which allows you to copy paste to/from excel
+                                                                    to flexible editor and vice versa providing different usability’s to the end user.</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i>Provided chrome support for the JDA Platform UI’s, as part of it documented and helped all the application teams of JDA to provide
+                                                                    Chrome support.</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i>Provided IPad support to JDA Platform UI’s, as part of it documented and helped all the application teams of JDA to provide IPad
+                                                                    safari support.</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i>Implemented a generic partial patch framework using ANT which can be used by JDA Platform as well as all the application teams to
+                                                                    handle patch generation/backup/installation to the customer.</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i>Implemented a type ahead search component for the Flexible Editor.</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i>Implemented an inline popup component in the JDA Platform.</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i>Implemented a wizard component in the JDA Platform</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i>Contributed to the Log4j SLF4J migration for the JDA Platform and corresponding application teams.</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i>Stood as a single point of contact for the JDA Platform UI components to the application teams.</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i>Provided JDA wrapper components for the DHTMLX components which were used by all the application teams of JDA.</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i>Handled DHTMLX support for the JDA platform.</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i>Part of the Customer Issues support team and fixed large number of customer issues as we support around 9 old releases.</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i>Stood as the main point of contact for the application teams for UI support for platform.</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i>Worked on fixing multiple customer issues.</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- MfgABPP -->
+                        <div class="col s12 m6">
+                            <div class="card project-container">
+                                <div style="padding: 30px 20px;margin-top: 2px;">
+                                    <h6 class="project-header">Manufacturing ABPP</h6>
+                                    <div class="center-align timeperiod"><i class="fas fa-calendar-alt" style="margin-right:15px;"></i>Jun 2015 - Dec 2016</div>
+                                    <p class="project-content center-text">One common UI experience across Demand-Supply-S&OP with process orchestration.</p>
+                                    <div class="row center-text">
+                                        <a class="btn cyan darken-2 waves-effect waves-light btn-primary custom-btn modal-trigger" href="#mfgabpp">Read More</a>
+
+                                        <div id="mfgabpp" class="modal">
+                                            <div class="modal-content">
+                                                <div style="padding: 0px 20px;margin-top: 2px;">
+                                                    <a href="#0" target="_blank" class="project-modal-close"><i class="fas fa-times"></i></a>
+                                                    <h6 class="project-header">Manufacturing ABPP</h6>
+                                                    <div class="center-align timeperiod project-sub-header">Stack</div>
+                                                    <div class="chips" style="border-bottom:none;">
+                                                        <div class="chip">Java</div>
+                                                        <div class="chip">Javascript</div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                    </div>
+                                                    <div class="center-align timeperiod project-sub-header">Roles and Responsibilities</div>
+                                                    <table class="striped">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i></td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- UFOSUPPS -->
+                        <div class="col s12 m6">
+                            <div class="card project-container">
+                                <div style="padding: 30px 20px;margin-top: 2px;">
+                                    <h6 class="project-header">UFOSUPPS</h6>
+                                    <div class="center-align timeperiod"><i class="fas fa-calendar-alt" style="margin-right:15px;"></i>Jun 2015 - Dec 2016</div>
+                                    <p class="project-content center-text">One common UI experience across Demand-Supply-S&OP with process orchestration.</p>
+                                    <div class="row center-text">
+                                        <a class="btn cyan darken-2 waves-effect waves-light btn-primary custom-btn modal-trigger" href="#ufosupps">Read More</a>
+
+                                        <div id="ufosupps" class="modal">
+                                            <div class="modal-content">
+                                                <div style="padding: 0px 20px;margin-top: 2px;">
+                                                    <a href="#0" target="_blank" class="project-modal-close"><i class="fas fa-times"></i></a>
+                                                    <h6 class="project-header">UFOSUPPS</h6>
+                                                    <div class="center-align timeperiod project-sub-header">Stack</div>
+                                                    <div class="chips" style="border-bottom:none;">
+                                                        <div class="chip">Java</div>
+                                                        <div class="chip">Javascript</div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                    </div>
+                                                    <div class="center-align timeperiod project-sub-header">Roles and Responsibilities</div>
+                                                    <table class="striped">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i></td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- iTrops -->
+                        <div class="col s12 m6">
+                            <div class="card project-container">
+                                <div style="padding: 30px 20px;margin-top: 2px;">
+                                    <h6 class="project-header">iTrops (Intelligent Transportation Operating Systems)</h6>
+                                    <div class="center-align timeperiod"><i class="fas fa-calendar-alt" style="margin-right:15px;"></i>Jun 2015 - Dec 2016</div>
+                                    <p class="project-content center-text">One common UI experience across Demand-Supply-S&OP with process orchestration.</p>
+                                    <div class="row center-text">
+                                        <a class="btn cyan darken-2 waves-effect waves-light btn-primary custom-btn modal-trigger" href="#itrops">Read More</a>
+
+                                        <div id="itrops" class="modal">
+                                            <div class="modal-content">
+                                                <div style="padding: 0px 20px;margin-top: 2px;">
+                                                    <a href="#0" target="_blank" class="project-modal-close"><i class="fas fa-times"></i></a>
+                                                    <h6 class="project-header">MPL One</h6>
+                                                    <div class="center-align timeperiod project-sub-header">Stack</div>
+                                                    <div class="chips" style="border-bottom:none;">
+                                                        <div class="chip">Java</div>
+                                                        <div class="chip">Javascript</div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                    </div>
+                                                    <div class="center-align timeperiod project-sub-header">Roles and Responsibilities</div>
+                                                    <table class="striped">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i></td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ciencia Journals -->
+                        <div class="col s12 m6">
+                            <div class="card project-container">
+                                <div style="padding: 30px 20px;margin-top: 2px;">
+                                    <h6 class="project-header">Ciencia Journals</h6>
+                                    <div class="center-align timeperiod"><i class="fas fa-calendar-alt" style="margin-right:15px;"></i>Jun 2015 - Dec 2016</div>
+                                    <p class="project-content center-text">One common UI experience across Demand-Supply-S&OP with process orchestration.</p>
+                                    <div class="row center-text">
+                                        <a class="btn cyan darken-2 waves-effect waves-light btn-primary custom-btn modal-trigger" href="#ciencia">Read More</a>
+
+                                        <div id="ciencia" class="modal">
+                                            <div class="modal-content">
+                                                <div style="padding: 0px 20px;margin-top: 2px;">
+                                                    <a href="#0" target="_blank" class="project-modal-close"><i class="fas fa-times"></i></a>
+                                                    <h6 class="project-header">MPL One</h6>
+                                                    <div class="center-align timeperiod project-sub-header">Stack</div>
+                                                    <div class="chips" style="border-bottom:none;">
+                                                        <div class="chip">Java</div>
+                                                        <div class="chip">Javascript</div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                    </div>
+                                                    <div class="center-align timeperiod project-sub-header">Roles and Responsibilities</div>
+                                                    <table class="striped">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i></td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Trippo -->
+                        <div class="col s12 m6">
+                            <div class="card project-container">
+                                <div style="padding: 30px 20px;margin-top: 2px;">
+                                    <h6 class="project-header">Trippo</h6>
+                                    <div class="center-align timeperiod"><i class="fas fa-calendar-alt" style="margin-right:15px;"></i>Jun 2015 - Dec 2016</div>
+                                    <p class="project-content center-text">One common UI experience across Demand-Supply-S&OP with process orchestration.</p>
+                                    <div class="row center-text">
+                                        <a class="btn cyan darken-2 waves-effect waves-light btn-primary custom-btn modal-trigger" href="#trippo">Read More</a>
+
+                                        <div id="trippo" class="modal">
+                                            <div class="modal-content">
+                                                <div style="padding: 0px 20px;margin-top: 2px;">
+                                                    <a href="#0" target="_blank" class="project-modal-close"><i class="fas fa-times"></i></a>
+                                                    <h6 class="project-header">MPL One</h6>
+                                                    <div class="center-align timeperiod project-sub-header">Stack</div>
+                                                    <div class="chips" style="border-bottom:none;">
+                                                        <div class="chip">Java</div>
+                                                        <div class="chip">Javascript</div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                        <div class="chip"></div>
+                                                    </div>
+                                                    <div class="center-align timeperiod project-sub-header">Roles and Responsibilities</div>
+                                                    <table class="striped">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i></td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td>
+                                                                    <i class="far fa-hand-point-right responsibility"></i></td>
+                                                            </tr>
+
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
                     </div>
-
-                    <!-- JDA Platform -->
-                    <div class="col s12 m6">
-                        <div class="card project-container">
-                            <div style="padding: 30px 20px;margin-top: 2px;">
-                                <h6 class="project-header">JDA Platform (Webworks)</h6>
-                                <div class="center-align timeperiod"><i class="fas fa-calendar-alt" style="margin-right:15px;"></i>Jun 2015 - Dec 2016</div>
-                                <p class="project-content center-text">One common UI experience across Demand-Supply-S&OP with process orchestration.</p>
-                                <div class="row center-text">
-                                    <a class="btn cyan darken-2 waves-effect waves-light btn-primary custom-btn modal-trigger" href="#mplone">Read More</a>
-
-                                    <div id="mplone" class="modal">
-                                        <div class="modal-content">
-                                            <div style="padding: 0px 20px;margin-top: 2px;">
-                                                <a href="#0" target="_blank" class="project-modal-close"><i class="fas fa-times"></i></a>
-                                                <h6 class="project-header">JDA Platform (Webworks)</h6>
-                                                <div class="center-align timeperiod project-sub-header">Stack</div>
-                                                <div class="chips" style="border-bottom:none;">
-                                                    <div class="chip">Java</div>
-                                                    <div class="chip">Javascript</div>
-                                                    <div class="chip">App Engine</div>
-                                                    <div class="chip">SASS</div>
-                                                    <div class="chip">HTML5</div>
-                                                    <div class="chip">Ext JS</div>
-                                                    <div class="chip">Jquery</div>
-                                                    <div class="chip">Spring</div>
-                                                    <div class="chip">Oracle</div>
-                                                    <div class="chip">Fusioncharts</div>
-                                                </div>
-                                                <div class="center-align timeperiod project-sub-header">Roles and Responsibilities</div>
-                                                <table class="striped">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>
-                                                                <i class="far fa-hand-point-right responsibility"></i>Part of the team formed for developing the product from the scratch.</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <i class="far fa-hand-point-right responsibility"></i>Worked on implementing customizable dashboard.</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <i class="far fa-hand-point-right responsibility"></i>Worked on implementing a feature to maintain the measures (related to supply chain).</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- MfgABPP -->
-                    <div class="col s12 m6">
-                        <div class="card project-container">
-                            <div style="padding: 30px 20px;margin-top: 2px;">
-                                <h6 class="project-header">Manufacturing ABPP</h6>
-                                <div class="center-align timeperiod"><i class="fas fa-calendar-alt" style="margin-right:15px;"></i>Jun 2015 - Dec 2016</div>
-                                <p class="project-content center-text">One common UI experience across Demand-Supply-S&OP with process orchestration.</p>
-                                <div class="row center-text">
-                                    <a class="btn cyan darken-2 waves-effect waves-light btn-primary custom-btn modal-trigger" href="#mplone">Read More</a>
-
-                                    <div id="mplone" class="modal">
-                                        <div class="modal-content">
-                                            <div style="padding: 0px 20px;margin-top: 2px;">
-                                                <a href="#0" target="_blank" class="project-modal-close"><i class="fas fa-times"></i></a>
-                                                <h6 class="project-header">Manufacturing ABPP</h6>
-                                                <div class="center-align timeperiod project-sub-header">Stack</div>
-                                                <div class="chips" style="border-bottom:none;">
-                                                    <div class="chip">Java</div>
-                                                    <div class="chip">Javascript</div>
-                                                    <div class="chip">App Engine</div>
-                                                    <div class="chip">SASS</div>
-                                                    <div class="chip">HTML5</div>
-                                                    <div class="chip">Ext JS</div>
-                                                    <div class="chip">Jquery</div>
-                                                    <div class="chip">Spring</div>
-                                                    <div class="chip">Oracle</div>
-                                                    <div class="chip">Fusioncharts</div>
-                                                </div>
-                                                <div class="center-align timeperiod project-sub-header">Roles and Responsibilities</div>
-                                                <table class="striped">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>
-                                                                <i class="far fa-hand-point-right responsibility"></i>Part of the team formed for developing the product from the scratch.</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <i class="far fa-hand-point-right responsibility"></i>Worked on implementing customizable dashboard.</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <i class="far fa-hand-point-right responsibility"></i>Worked on implementing a feature to maintain the measures (related to supply chain).</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- UFOSUPPS -->
-                    <div class="col s12 m6">
-                        <div class="card project-container">
-                            <div style="padding: 30px 20px;margin-top: 2px;">
-                                <h6 class="project-header">UFOSUPPS</h6>
-                                <div class="center-align timeperiod"><i class="fas fa-calendar-alt" style="margin-right:15px;"></i>Jun 2015 - Dec 2016</div>
-                                <p class="project-content center-text">One common UI experience across Demand-Supply-S&OP with process orchestration.</p>
-                                <div class="row center-text">
-                                    <a class="btn cyan darken-2 waves-effect waves-light btn-primary custom-btn modal-trigger" href="#mplone">Read More</a>
-
-                                    <div id="mplone" class="modal">
-                                        <div class="modal-content">
-                                            <div style="padding: 0px 20px;margin-top: 2px;">
-                                                <a href="#0" target="_blank" class="project-modal-close"><i class="fas fa-times"></i></a>
-                                                <h6 class="project-header">UFOSUPPS</h6>
-                                                <div class="center-align timeperiod project-sub-header">Stack</div>
-                                                <div class="chips" style="border-bottom:none;">
-                                                    <div class="chip">Java</div>
-                                                    <div class="chip">Javascript</div>
-                                                    <div class="chip">App Engine</div>
-                                                    <div class="chip">SASS</div>
-                                                    <div class="chip">HTML5</div>
-                                                    <div class="chip">Ext JS</div>
-                                                    <div class="chip">Jquery</div>
-                                                    <div class="chip">Spring</div>
-                                                    <div class="chip">Oracle</div>
-                                                    <div class="chip">Fusioncharts</div>
-                                                </div>
-                                                <div class="center-align timeperiod project-sub-header">Roles and Responsibilities</div>
-                                                <table class="striped">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>
-                                                                <i class="far fa-hand-point-right responsibility"></i>Part of the team formed for developing the product from the scratch.</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <i class="far fa-hand-point-right responsibility"></i>Worked on implementing customizable dashboard.</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <i class="far fa-hand-point-right responsibility"></i>Worked on implementing a feature to maintain the measures (related to supply chain).</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- iTrops -->
-                    <div class="col s12 m6">
-                        <div class="card project-container">
-                            <div style="padding: 30px 20px;margin-top: 2px;">
-                                <h6 class="project-header">iTrops (Intelligent Transportation Operating Systems)</h6>
-                                <div class="center-align timeperiod"><i class="fas fa-calendar-alt" style="margin-right:15px;"></i>Jun 2015 - Dec 2016</div>
-                                <p class="project-content center-text">One common UI experience across Demand-Supply-S&OP with process orchestration.</p>
-                                <div class="row center-text">
-                                    <a class="btn cyan darken-2 waves-effect waves-light btn-primary custom-btn modal-trigger" href="#mplone">Read More</a>
-
-                                    <div id="mplone" class="modal">
-                                        <div class="modal-content">
-                                            <div style="padding: 0px 20px;margin-top: 2px;">
-                                                <a href="#0" target="_blank" class="project-modal-close"><i class="fas fa-times"></i></a>
-                                                <h6 class="project-header">MPL One</h6>
-                                                <div class="center-align timeperiod project-sub-header">Stack</div>
-                                                <div class="chips" style="border-bottom:none;">
-                                                    <div class="chip">Java</div>
-                                                    <div class="chip">Javascript</div>
-                                                    <div class="chip">App Engine</div>
-                                                    <div class="chip">SASS</div>
-                                                    <div class="chip">HTML5</div>
-                                                    <div class="chip">Ext JS</div>
-                                                    <div class="chip">Jquery</div>
-                                                    <div class="chip">Spring</div>
-                                                    <div class="chip">Oracle</div>
-                                                    <div class="chip">Fusioncharts</div>
-                                                </div>
-                                                <div class="center-align timeperiod project-sub-header">Roles and Responsibilities</div>
-                                                <table class="striped">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>
-                                                                <i class="far fa-hand-point-right responsibility"></i>Part of the team formed for developing the product from the scratch.</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <i class="far fa-hand-point-right responsibility"></i>Worked on implementing customizable dashboard.</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <i class="far fa-hand-point-right responsibility"></i>Worked on implementing a feature to maintain the measures (related to supply chain).</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Ciencia Journals -->
-                    <div class="col s12 m6">
-                        <div class="card project-container">
-                            <div style="padding: 30px 20px;margin-top: 2px;">
-                                <h6 class="project-header">Ciencia Journals</h6>
-                                <div class="center-align timeperiod"><i class="fas fa-calendar-alt" style="margin-right:15px;"></i>Jun 2015 - Dec 2016</div>
-                                <p class="project-content center-text">One common UI experience across Demand-Supply-S&OP with process orchestration.</p>
-                                <div class="row center-text">
-                                    <a class="btn cyan darken-2 waves-effect waves-light btn-primary custom-btn modal-trigger" href="#mplone">Read More</a>
-
-                                    <div id="mplone" class="modal">
-                                        <div class="modal-content">
-                                            <div style="padding: 0px 20px;margin-top: 2px;">
-                                                <a href="#0" target="_blank" class="project-modal-close"><i class="fas fa-times"></i></a>
-                                                <h6 class="project-header">MPL One</h6>
-                                                <div class="center-align timeperiod project-sub-header">Stack</div>
-                                                <div class="chips" style="border-bottom:none;">
-                                                    <div class="chip">Java</div>
-                                                    <div class="chip">Javascript</div>
-                                                    <div class="chip">App Engine</div>
-                                                    <div class="chip">SASS</div>
-                                                    <div class="chip">HTML5</div>
-                                                    <div class="chip">Ext JS</div>
-                                                    <div class="chip">Jquery</div>
-                                                    <div class="chip">Spring</div>
-                                                    <div class="chip">Oracle</div>
-                                                    <div class="chip">Fusioncharts</div>
-                                                </div>
-                                                <div class="center-align timeperiod project-sub-header">Roles and Responsibilities</div>
-                                                <table class="striped">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>
-                                                                <i class="far fa-hand-point-right responsibility"></i>Part of the team formed for developing the product from the scratch.</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <i class="far fa-hand-point-right responsibility"></i>Worked on implementing customizable dashboard.</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <i class="far fa-hand-point-right responsibility"></i>Worked on implementing a feature to maintain the measures (related to supply chain).</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Trippo -->
-                    <div class="col s12 m6">
-                        <div class="card project-container">
-                            <div style="padding: 30px 20px;margin-top: 2px;">
-                                <h6 class="project-header">Trippo</h6>
-                                <div class="center-align timeperiod"><i class="fas fa-calendar-alt" style="margin-right:15px;"></i>Jun 2015 - Dec 2016</div>
-                                <p class="project-content center-text">One common UI experience across Demand-Supply-S&OP with process orchestration.</p>
-                                <div class="row center-text">
-                                    <a class="btn cyan darken-2 waves-effect waves-light btn-primary custom-btn modal-trigger" href="#mplone">Read More</a>
-
-                                    <div id="mplone" class="modal">
-                                        <div class="modal-content">
-                                            <div style="padding: 0px 20px;margin-top: 2px;">
-                                                <a href="#0" target="_blank" class="project-modal-close"><i class="fas fa-times"></i></a>
-                                                <h6 class="project-header">MPL One</h6>
-                                                <div class="center-align timeperiod project-sub-header">Stack</div>
-                                                <div class="chips" style="border-bottom:none;">
-                                                    <div class="chip">Java</div>
-                                                    <div class="chip">Javascript</div>
-                                                    <div class="chip">App Engine</div>
-                                                    <div class="chip">SASS</div>
-                                                    <div class="chip">HTML5</div>
-                                                    <div class="chip">Ext JS</div>
-                                                    <div class="chip">Jquery</div>
-                                                    <div class="chip">Spring</div>
-                                                    <div class="chip">Oracle</div>
-                                                    <div class="chip">Fusioncharts</div>
-                                                </div>
-                                                <div class="center-align timeperiod project-sub-header">Roles and Responsibilities</div>
-                                                <table class="striped">
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>
-                                                                <i class="far fa-hand-point-right responsibility"></i>Part of the team formed for developing the product from the scratch.</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <i class="far fa-hand-point-right responsibility"></i>Worked on implementing customizable dashboard.</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>
-                                                                <i class="far fa-hand-point-right responsibility"></i>Worked on implementing a feature to maintain the measures (related to supply chain).</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="row center-text">
+                        <a class="btn-floating cyan darken-2 waves-effect waves-light btn-large expand-collapse" id="expand"><i class="material-icons">arrow_drop_down</i></a>
+                        <a class="btn-floating cyan darken-2 waves-effect waves-light btn-large display-none expand-collapse" id="collapse"><i class="material-icons">arrow_drop_up</i></a>
                     </div>
 
                 </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h4 class="custom-header">Stack</h4>
                 <div class="row center-text">
-                    <a class="btn-floating cyan darken-2 waves-effect waves-light btn-large expand-collapse" id="expand"><i class="material-icons">arrow_drop_down</i></a>
-                    <a class="btn-floating cyan darken-2 waves-effect waves-light btn-large display-none expand-collapse" id="collapse"><i class="material-icons">arrow_drop_up</i></a>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="section">
-            <h4 class="custom-header">Stack</h4>
-            <div class="row center-text">
-                <div class="card">
-                    <div class="card-content">
-                        <div id="my_favorite_latin_words" style="width: 800px; height:450px; border: 0px solid #ccc;display:inline-block;" class="stack"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="section">
-            <h4 class="custom-header">Reviews</h4>
-
-            <div class="carousel carousel-slider center reviews" style="max-height:350px;">
-                <div class="carousel-item" href="#one!">
                     <div class="card">
                         <div class="card-content">
-                            <p class="review">"Rakesh worked on my team on a number of strategic projects that I managed at JDA Software. During this time I observed the following traits about Rakesh which will make him an asset to any team. Rakesh is passionate about
-                                writing code, sharing his ideas and solving problems in software development. He stays up-to-date on the latest technologies. He understands instructions quickly and is flexible and agile when changes have to be made to
-                                the original plan. Rakesh’s enthusiasm and friendly demeanor made him well-liked and respected by his fellow associates.."</p>
-                            <span class="reviewer">- Paromita Sarkar, Director of Software Engineering/Development </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item" href="#two!">
-                    <div class="card">
-                        <div class="card-content">
-                            <p class="review">I got to know Rakesh on the first day I joined JDA. He was the first person who came forward to talk to me and helped me setup my work station. When I thought he was just another casual team members, that is when I found the
-                                features that he has worked on. He developed the search functionality, something that is most widely used, the working on changing the look and feel of the application by bringing in UX suggestions. Next he was involved
-                                in most prestigious projects, the MPL One, harbouring the platform side of the features. In spite of working on highly demanding projects, he has never hesitated helping anyone who has come to seek his help. Whenever he
-                                felt his work had become monotonous, he indulged in learning new skills, which has definitely helped him grow professionally and personally. I wish Rakesh the best in whatever he tries to pursue. Good Luck!!!</p>
-                            <span class="reviewer">- Shashi Kiran Nandivada, Project Lead at JDA Software</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item" href="#three!">
-                    <div class="card">
-                        <div class="card-content">
-                            <p class="review">It’s been almost an year working with Rakesh, he is one of the best team member I have worked with. He is passionate about technology and stays upto date on the latest technologies he is working on. He developed Automation
-                                framework for UI, REST API, Thrift API, Mobile-Android-iOS in a behavior oriented approach from scratch. Also came up with a concept of Hybrid scenarios which combines all the suites mentioned before (the complete end to
-                                end). Done a research on running automation scripts on AWS machines Vs Browser Stack/Saucelabs and effectively came up with a plan of in-house hosting & Scheduling on AWS with more performance and less cost. Implemented
-                                the same and successfully providing daily reports in an intuitive way which are more useful in identifying failure ASAP.</p>
-                            <span class="reviewer">- Jeevan Jyothi, QA Manager at Reputation.com </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item" href="#four!">
-                    <div class="card">
-                        <div class="card-content">
-                            <p class="review">Rakesh is my colleague in JDA company. I have worked with him for almost 5 years, he is one of the best team member. He has developed many critical feature’s and solved critical issues. He is very passionate about new technologies.
-                                Especially he is expert at UI technologies. Any critical issue related to UI, first we will contact him for suggestions. He is very pro-active and try to solve the issues/problems of other team members. Also he didn’t miss
-                                any competition conducted related to technology in company. Because of his helping nature, he become a good friend. All the Best Rakesh.</p>
-                            <span class="reviewer">- Suresh Yadam, Technical Architect at JDA Hyderabad </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item" href="#five!">
-                    <div class="card">
-                        <div class="card-content">
-                            <p class="review">I worked with Rakesh for more than 2 years. We were having cross platform dependency. Rakesh was so prompt to solve the issues coming to his way. He has very good problem solving and debugging Skills. He is quick learner, hardworking
-                                and knowledgeable person.</p>
-                            <span class="reviewer">- Sheetal Sisodiya, Senior Software Engineer at JDA Software </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item" href="#six!">
-                    <div class="card">
-                        <div class="card-content">
-                            <p class="review">At JDA I was lead for Rakesh. His first assignment with me was Type ahead search and Animation fly out for prompted search, and he delivered with great quality. He has immensely contributed towards critical projects like MPL
-                                one. He was one of the single point of contact for any kind of UI issues. He is in most demand among all product teams for his expertise in UI skills. He is committed,hard-workingg and has passion towards the product and
-                                technology. Rakesh is an independent learner who always thinks out of box. He always thrives to provide the best solutions and complete the assigned task on or before time and with great quality. He has a passion towards
-                                learning new UI technologies which have made him a great a programmer.</p>
-                            <span class="reviewer">- Himansu Rout, Project Lead at JDA Software</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item" href="#seven!">
-                    <div class="card">
-                        <div class="card-content">
-                            <p class="review">Rakesh is a very hardworking dedicated person who takes his work with utmost seriousness. Has great problem solving skills and in-depth technical knowledge. He was our team's go-to person for any and all problems. He is never
-                                the one to hesitate to help others and is a great team player. Last but not the least, Rakesh is an avid learner of latest technologies.</p>
-                            <span class="reviewer">- Jitu Dey, Software Engineer at JDA Software </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item" href="#seven!">
-                    <div class="card">
-                        <div class="card-content">
-                            <p class="review">I had the pleasure of working with Rakesh for over a year at Reputation.com. He is a diligent and dedicated person. He put in immense effort into researching to get to an automation framework that would carter to the needs
-                                of the QA team and would scale across multiple platforms like Web , APIs and mobile. He worked towards implementing and streamlining the automation process at Reputation.com which has greatly improved the product quality.
-                                Rakesh also puts in extra effort into mentoring and guiding other team mates. Besides this, his willingness to help others and be accommodative of other's ideas has made him a great team player!</p>
-                            <span class="reviewer">- Suganya Kanagavel, QA Engineer at Reputation.com </span>
+                            <div id="my_favorite_latin_words" style="width: 800px; height:450px; border: 0px solid #ccc;display:inline-block;" class="stack"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="container">
-        <div class="section">
-            <div class="row">
-                <div class="col s12 m3">
-                </div>
-                <div class="col s12 m6">
-                    <div class="card center-text" id="contact" style="background-color:#0097a7;color:#FFF;">
-                        <div class="card-content">
-                            <ul class="text-center details" data-aos="fade" data-aos-delay="200" data-aos-offset="0">
-                                <li>
-                                    <i class="fas fa-phone icon"></i>
-                                    <span class="content">+91 9032498952</span>
-                                </li>
+        <div class="container">
+            <div class="section">
+                <h4 class="custom-header">Reviews</h4>
 
-                                <li>
-                                    <i class="fas fa-envelope icon"></i>
-                                    <span class="content">rakhi.b4@gmail.com</span>
-                                </li>
-                                <li>
-                                    <i class="fas fa-globe icon"></i>
-                                    <span class="content">www.srakeshkumar.com</span>
-                                </li>
-                                <li>
-                                    <i class="fas fa-map-marker-alt icon"></i>
-                                    <span class="content">Flat No 513, Jayasudhas Mythri Vihar, Hyderabad</span>
-                                </li>
-                            </ul>
+                <div class="carousel carousel-slider center reviews">
+                    <div class="carousel-item" href="#one!">
+                        <div class="card">
+                            <div class="card-content">
+                                <p class="review">"Rakesh worked on my team on a number of strategic projects that I managed at JDA Software. During this time I observed the following traits about Rakesh which will make him an asset to any team. Rakesh is passionate about
+                                    writing code, sharing his ideas and solving problems in software development. He stays up-to-date on the latest technologies. He understands instructions quickly and is flexible and agile when changes have to be made
+                                    to the original plan. Rakesh’s enthusiasm and friendly demeanor made him well-liked and respected by his fellow associates.."</p>
+                                <span class="reviewer">- Paromita Sarkar, Director of Software Engineering/Development </span>
+                            </div>
                         </div>
                     </div>
-
+                    <div class="carousel-item" href="#two!">
+                        <div class="card">
+                            <div class="card-content">
+                                <p class="review">I got to know Rakesh on the first day I joined JDA. He was the first person who came forward to talk to me and helped me setup my work station. When I thought he was just another casual team members, that is when I found
+                                    the features that he has worked on. He developed the search functionality, something that is most widely used, the working on changing the look and feel of the application by bringing in UX suggestions. Next he was
+                                    involved in most prestigious projects, the MPL One, harbouring the platform side of the features. In spite of working on highly demanding projects, he has never hesitated helping anyone who has come to seek his help.
+                                    Whenever he felt his work had become monotonous, he indulged in learning new skills, which has definitely helped him grow professionally and personally. I wish Rakesh the best in whatever he tries to pursue. Good Luck!!!</p>
+                                <span class="reviewer">- Shashi Kiran Nandivada, Project Lead at JDA Software</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" href="#three!">
+                        <div class="card">
+                            <div class="card-content">
+                                <p class="review">It’s been almost an year working with Rakesh, he is one of the best team member I have worked with. He is passionate about technology and stays upto date on the latest technologies he is working on. He developed Automation
+                                    framework for UI, REST API, Thrift API, Mobile-Android-iOS in a behavior oriented approach from scratch. Also came up with a concept of Hybrid scenarios which combines all the suites mentioned before (the complete end
+                                    to end). Done a research on running automation scripts on AWS machines Vs Browser Stack/Saucelabs and effectively came up with a plan of in-house hosting & Scheduling on AWS with more performance and less cost. Implemented
+                                    the same and successfully providing daily reports in an intuitive way which are more useful in identifying failure ASAP.</p>
+                                <span class="reviewer">- Jeevan Jyothi, QA Manager at Reputation.com </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" href="#four!">
+                        <div class="card">
+                            <div class="card-content">
+                                <p class="review">Rakesh is my colleague in JDA company. I have worked with him for almost 5 years, he is one of the best team member. He has developed many critical feature’s and solved critical issues. He is very passionate about new technologies.
+                                    Especially he is expert at UI technologies. Any critical issue related to UI, first we will contact him for suggestions. He is very pro-active and try to solve the issues/problems of other team members. Also he didn’t
+                                    miss any competition conducted related to technology in company. Because of his helping nature, he become a good friend. All the Best Rakesh.</p>
+                                <span class="reviewer">- Suresh Yadam, Technical Architect at JDA Hyderabad </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" href="#five!">
+                        <div class="card">
+                            <div class="card-content">
+                                <p class="review">I worked with Rakesh for more than 2 years. We were having cross platform dependency. Rakesh was so prompt to solve the issues coming to his way. He has very good problem solving and debugging Skills. He is quick learner,
+                                    hardworking and knowledgeable person.</p>
+                                <span class="reviewer">- Sheetal Sisodiya, Senior Software Engineer at JDA Software </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" href="#six!">
+                        <div class="card">
+                            <div class="card-content">
+                                <p class="review">At JDA I was lead for Rakesh. His first assignment with me was Type ahead search and Animation fly out for prompted search, and he delivered with great quality. He has immensely contributed towards critical projects like
+                                    MPL one. He was one of the single point of contact for any kind of UI issues. He is in most demand among all product teams for his expertise in UI skills. He is committed,hard-workingg and has passion towards the product
+                                    and technology. Rakesh is an independent learner who always thinks out of box. He always thrives to provide the best solutions and complete the assigned task on or before time and with great quality. He has a passion
+                                    towards learning new UI technologies which have made him a great a programmer.</p>
+                                <span class="reviewer">- Himansu Rout, Project Lead at JDA Software</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" href="#seven!">
+                        <div class="card">
+                            <div class="card-content">
+                                <p class="review">Rakesh is a very hardworking dedicated person who takes his work with utmost seriousness. Has great problem solving skills and in-depth technical knowledge. He was our team's go-to person for any and all problems. He is
+                                    never the one to hesitate to help others and is a great team player. Last but not the least, Rakesh is an avid learner of latest technologies.</p>
+                                <span class="reviewer">- Jitu Dey, Software Engineer at JDA Software </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item" href="#seven!">
+                        <div class="card">
+                            <div class="card-content">
+                                <p class="review">I had the pleasure of working with Rakesh for over a year at Reputation.com. He is a diligent and dedicated person. He put in immense effort into researching to get to an automation framework that would carter to the needs
+                                    of the QA team and would scale across multiple platforms like Web , APIs and mobile. He worked towards implementing and streamlining the automation process at Reputation.com which has greatly improved the product quality.
+                                    Rakesh also puts in extra effort into mentoring and guiding other team mates. Besides this, his willingness to help others and be accommodative of other's ideas has made him a great team player!</p>
+                                <span class="reviewer">- Suganya Kanagavel, QA Engineer at Reputation.com </span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <footer class="page-footer cyan darken-2">
 
-        <div class="footer-copyright cyan darken-2">
-            <div class="container center-text">
-                Copyright Rakesh Kumar 2018
+        <div class="container">
+            <div class="section">
+                <div class="row">
+                    <div class="col s12 m3">
+                    </div>
+                    <div class="col s12 m6">
+                        <div class="card center-text" id="contact" style="background-color:#0097a7;color:#FFF;">
+                            <div class="card-content">
+                                <ul class="text-center details" data-aos="fade" data-aos-delay="200" data-aos-offset="0">
+                                    <li>
+                                        <i class="fas fa-phone icon"></i>
+                                        <span class="content">+91 9032498952</span>
+                                    </li>
+
+                                    <li>
+                                        <i class="fas fa-envelope icon"></i>
+                                        <span class="content">rakhi.b4@gmail.com</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-globe icon"></i>
+                                        <span class="content">www.srakeshkumar.com</span>
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-map-marker-alt icon"></i>
+                                        <span class="content">Flat No 513, Jayasudhas Mythri Vihar, Hyderabad</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </div>
-    </footer>
+        <footer class="page-footer cyan darken-2">
+
+            <div class="footer-copyright cyan darken-2">
+                <div class="container center-text">
+                    Copyright Rakesh Kumar 2018
+                </div>
+            </div>
+        </footer>
 
 
-    <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script src="js/materialize.js"></script>
-    <script src="js/init.js"></script>
-    <script type="text/javascript" src="js/jqcloud-1.0.4.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            var elems = document.querySelectorAll('.modal');
-            var instances = M.Modal.init(elems);
-        });
-
-        // Or with jQuery
-
-        $(document).ready(function() {
-            $('.modal').modal();
-
-            var instance = M.Carousel.init({
-                fullWidth: true,
-                indicators: true
+        <!--  Scripts-->
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="js/materialize.js"></script>
+        <script src="js/init.js"></script>
+        <script type="text/javascript" src="js/jqcloud-1.0.4.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.modal');
+                var instances = M.Modal.init(elems);
             });
 
             // Or with jQuery
 
-            $('.carousel.carousel-slider').carousel({
-                fullWidth: true,
-                indicators: true
-            });
+            $(document).ready(function() {
+                $('.modal').modal();
 
-            function autoplay() {
-                $('.carousel').carousel('next');
+                var instance = M.Carousel.init({
+                    fullWidth: true,
+                    indicators: true
+                });
+
+                // Or with jQuery
+
+                $('.carousel.carousel-slider').carousel({
+                    fullWidth: true,
+                    indicators: true
+                });
+
+                function autoplay() {
+                    $('.carousel').carousel('next');
+                    setTimeout(autoplay, 15000);
+                }
                 setTimeout(autoplay, 15000);
-            }
-            setTimeout(autoplay, 15000);
 
-            $("#expand").click(() => {
-                //$('#test').removeClass('scale-out').addClass('scale-in');
-                $('#test').slideDown(1000);
-                $('#expand').addClass('display-none');
-                $('#collapse').removeClass('display-none');
+                $("#expand").click(() => {
+                    //$('#test').removeClass('scale-out').addClass('scale-in');
+                    $('#test').slideDown(1000);
+                    $('#expand').addClass('display-none');
+                    $('#collapse').removeClass('display-none');
+                });
+                $("#collapse").click(() => {
+                    //$('#test').removeClass('scale-in').addClass('scale-out');
+                    $('#test').slideUp(1000);
+                    $('#expand').removeClass('display-none');
+                    $('#collapse').addClass('display-none');
+                });
             });
-            $("#collapse").click(() => {
-                //$('#test').removeClass('scale-in').addClass('scale-out');
-                $('#test').slideUp(1000);
-                $('#expand').removeClass('display-none');
-                $('#collapse').addClass('display-none');
+        </script>
+        <script type="text/javascript">
+            var word_list = [{
+                    text: "Java",
+                    weight: 10,
+                    link: "https://github.com/DukeLeNoir/jQCloud"
+                },
+                {
+                    text: "Javascript",
+                    weight: 10
+                },
+                {
+                    text: "NodeJS",
+                    weight: 8,
+                    html: {
+                        "class": "vertical"
+                    }
+                },
+                {
+                    text: "ReactJS",
+                    weight: 8
+                },
+                {
+                    text: "Gulp",
+                    weight: 5
+                },
+                {
+                    text: "Babel",
+                    weight: 2,
+                    html: {
+                        "class": "vertical"
+                    }
+                },
+                {
+                    text: "Algorithms",
+                    weight: 6
+                },
+                {
+                    text: "Data Structures",
+                    weight: 6
+                },
+                {
+                    text: "ExtJS",
+                    weight: 7
+                },
+                {
+                    text: "DHTMLX",
+                    weight: 7
+                },
+                {
+                    text: "J2EE",
+                    weight: 5
+                },
+                {
+                    text: "Webpack",
+                    weight: 2
+                },
+                {
+                    text: "Spring",
+                    weight: 5,
+                    html: {
+                        "class": "vertical"
+                    }
+                },
+                {
+                    text: "JSOUP",
+                    weight: 2
+                },
+                {
+                    text: "Gradle",
+                    weight: 4
+                },
+                {
+                    text: "Maven",
+                    weight: 4
+                },
+                {
+                    text: "Groovy",
+                    weight: 3,
+                    html: {
+                        "class": "vertical"
+                    }
+                },
+                {
+                    text: "Ant",
+                    weight: 3
+                },
+                {
+                    text: "REST",
+                    weight: 5
+                },
+                {
+                    text: "ExpressJS",
+                    weight: 4
+                },
+                {
+                    text: "PassportJS",
+                    weight: 1,
+                    html: {
+                        "class": "vertical"
+                    }
+                },
+                {
+                    text: "Q",
+                    weight: 5
+                },
+                {
+                    text: "Async",
+                    weight: 1
+                },
+                {
+                    text: "CucumberJS",
+                    weight: 5
+                },
+                {
+                    text: "SASS",
+                    weight: 3
+                },
+                {
+                    text: "ES Lint",
+                    weight: 1
+                },
+                {
+                    text: "JSF",
+                    weight: 1
+                },
+                {
+                    text: "Flux",
+                    weight: 1,
+                    html: {
+                        "class": "vertical"
+                    }
+                },
+                {
+                    text: "Primefaces",
+                    weight: 1,
+                    html: {
+                        "class": "vertical"
+                    }
+                },
+                {
+                    text: "DWR",
+                    weight: 2
+                },
+                {
+                    text: "JQuery",
+                    weight: 9,
+                    html: {
+                        "class": "vertical"
+                    }
+                },
+                {
+                    text: "JQuery Mobile",
+                    weight: 1
+                },
+                {
+                    text: "Bootstrap",
+                    weight: 4
+                },
+                {
+                    text: "Material Design",
+                    weight: 4
+                },
+                {
+                    text: "GetMDL",
+                    weight: 2
+                },
+                {
+                    text: "AWS",
+                    weight: 4
+                },
+                {
+                    text: "GCP",
+                    weight: 4
+                },
+                {
+                    text: "JUnit",
+                    weight: 1
+                },
+                {
+                    text: "Mocha",
+                    weight: 1
+                },
+                {
+                    text: "Jasmine",
+                    weight: 1
+                },
+                {
+                    text: "Nunjucks",
+                    weight: 1
+                },
+                {
+                    text: "SuperTest",
+                    weight: 1
+                },
+                {
+                    text: "Progalenor",
+                    weight: 1
+                },
+                {
+                    text: "Perfjankie",
+                    weight: 1
+                },
+                {
+                    text: "Protractor",
+                    weight: 8
+                },
+                {
+                    text: "Appium",
+                    weight: 1
+                },
+                {
+                    text: "Jenkins",
+                    weight: 5,
+                    html: {
+                        "class": "vertical"
+                    }
+                },
+                {
+                    text: "Logback",
+                    weight: 1
+                },
+                {
+                    text: "GruntJS",
+                    weight: 1
+                },
+                {
+                    text: "Chai JS",
+                    weight: 5,
+                    html: {
+                        "class": "vertical"
+                    }
+                },
+                {
+                    text: "ES6",
+                    weight: 5
+                },
+                {
+                    text: "Redis",
+                    weight: 3
+                },
+                {
+                    text: "MongoDB",
+                    weight: 4
+                },
+                {
+                    text: "My SQL",
+                    weight: 3
+                },
+                {
+                    text: "Hibernate",
+                    weight: 2,
+                    html: {
+                        "class": "vertical"
+                    }
+                },
+                {
+                    text: "JPA",
+                    weight: 2
+                },
+                {
+                    text: "Mongoose",
+                    weight: 4
+                },
+                {
+                    text: "Express JWT",
+                    weight: 1,
+                    html: {
+                        "class": "vertical"
+                    }
+                },
+                {
+                    text: "Twitter API",
+                    weight: 2,
+                    html: {
+                        "class": "vertical"
+                    }
+                },
+                {
+                    text: "CSS3",
+                    weight: 8
+                },
+                {
+                    text: "HTML5",
+                    weight: 8
+                },
+                {
+                    text: "Redux",
+                    weight: 5
+                },
+                {
+                    text: "Flux",
+                    weight: 3
+                },
+                {
+                    text: "Wiremock",
+                    weight: 1
+                },
+                {
+                    text: "Websockets",
+                    weight: 1,
+                    html: {
+                        "class": "vertical"
+                    }
+                },
+                {
+                    text: "Cheerio",
+                    weight: 1
+                },
+                {
+                    text: "Nodemon",
+                    weight: 1
+                },
+                {
+                    text: "PhoneGap",
+                    weight: 1,
+                    html: {
+                        "class": "vertical"
+                    }
+                },
+                {
+                    text: "XML",
+                    weight: 2
+                },
+                {
+                    text: "SQL",
+                    weight: 3
+                },
+                {
+                    text: "ElasticSearch",
+                    weight: 2,
+                    html: {
+                        "class": "vertical"
+                    }
+                },
+                {
+                    text: "Kibana",
+                    weight: 2
+                },
+                {
+                    text: "Thrift",
+                    weight: 1
+                },
+                {
+                    text: "EC2",
+                    weight: 5
+                },
+                {
+                    text: "Heroku",
+                    weight: 2
+                },
+                {
+                    text: "RabbitMQ",
+                    weight: 1
+                },
+                {
+                    text: "Fusion Charts",
+                    weight: 4,
+                    html: {
+                        "class": "vertical"
+                    }
+                },
+                {
+                    text: "Meteor JS",
+                    weight: 2
+                },
+                {
+                    text: "Reaction Commerce",
+                    weight: 1
+                },
+                {
+                    text: "Docker",
+                    weight: 3
+                },
+                {
+                    text: "Microservices",
+                    weight: 9
+                },
+                {
+                    text: "Functional Programming",
+                    weight: 4
+                },
+                {
+                    text: "UnderscoreJS",
+                    weight: 2
+                },
+                {
+                    text: "BackboneJS",
+                    weight: 1,
+                    html: {
+                        "class": "vertical"
+                    }
+                },
+                {
+                    text: "Handlebars",
+                    weight: 1
+                },
+                {
+                    text: "BigQuery",
+                    weight: 2
+                },
+                {
+                    text: "Agile",
+                    weight: 6
+                },
+                {
+                    text: "Gherkin",
+                    weight: 3,
+                    html: {
+                        "class": "vertical"
+                    }
+                },
+                {
+                    text: "Design Patterns",
+                    weight: 4
+                },
+                {
+                    text: "Postgre",
+                    weight: 1
+                },
+                {
+                    text: "Weblogic",
+                    weight: 2
+                },
+                {
+                    text: "Jersy",
+                    weight: 1
+                },
+                {
+                    text: "Charts JS",
+                    weight: 2
+                },
+                {
+                    text: "DynamoDB",
+                    weight: 1
+                },
+                {
+                    text: "Chrome Plugins",
+                    weight: 1
+                },
+                {
+                    text: "Swagger",
+                    weight: 1
+                },
+                {
+                    text: "NPM",
+                    weight: 7
+                },
+                {
+                    text: "AngularJS",
+                    weight: 1
+                },
+                {
+                    text: "SLF4J",
+                    weight: 1
+                }
+            ];
+            $(function() {
+                $("#my_favorite_latin_words").jQCloud(word_list);
             });
-        });
-    </script>
-    <script type="text/javascript">
-        var word_list = [{
-                text: "Java",
-                weight: 10,
-                link: "https://github.com/DukeLeNoir/jQCloud"
-            },
-            {
-                text: "Javascript",
-                weight: 10
-            },
-            {
-                text: "NodeJS",
-                weight: 8,
-                html: {
-                    "class": "vertical"
-                }
-            },
-            {
-                text: "ReactJS",
-                weight: 8
-            },
-            {
-                text: "Gulp",
-                weight: 5
-            },
-            {
-                text: "Babel",
-                weight: 2,
-                html: {
-                    "class": "vertical"
-                }
-            },
-            {
-                text: "Algorithms",
-                weight: 6
-            },
-            {
-                text: "Data Structures",
-                weight: 6
-            },
-            {
-                text: "ExtJS",
-                weight: 7
-            },
-            {
-                text: "DHTMLX",
-                weight: 7
-            },
-            {
-                text: "J2EE",
-                weight: 5
-            },
-            {
-                text: "Webpack",
-                weight: 2
-            },
-            {
-                text: "Spring",
-                weight: 5,
-                html: {
-                    "class": "vertical"
-                }
-            },
-            {
-                text: "JSOUP",
-                weight: 2
-            },
-            {
-                text: "Gradle",
-                weight: 4
-            },
-            {
-                text: "Maven",
-                weight: 4
-            },
-            {
-                text: "Groovy",
-                weight: 3,
-                html: {
-                    "class": "vertical"
-                }
-            },
-            {
-                text: "Ant",
-                weight: 3
-            },
-            {
-                text: "REST",
-                weight: 5
-            },
-            {
-                text: "ExpressJS",
-                weight: 4
-            },
-            {
-                text: "PassportJS",
-                weight: 1,
-                html: {
-                    "class": "vertical"
-                }
-            },
-            {
-                text: "Q",
-                weight: 5
-            },
-            {
-                text: "Async",
-                weight: 1
-            },
-            {
-                text: "CucumberJS",
-                weight: 5
-            },
-            {
-                text: "SASS",
-                weight: 3
-            },
-            {
-                text: "ES Lint",
-                weight: 1
-            },
-            {
-                text: "JSF",
-                weight: 1
-            },
-            {
-                text: "Flux",
-                weight: 1,
-                html: {
-                    "class": "vertical"
-                }
-            },
-            {
-                text: "Primefaces",
-                weight: 1,
-                html: {
-                    "class": "vertical"
-                }
-            },
-            {
-                text: "DWR",
-                weight: 2
-            },
-            {
-                text: "JQuery",
-                weight: 9,
-                html: {
-                    "class": "vertical"
-                }
-            },
-            {
-                text: "JQuery Mobile",
-                weight: 1
-            },
-            {
-                text: "Bootstrap",
-                weight: 4
-            },
-            {
-                text: "Material Design",
-                weight: 4
-            },
-            {
-                text: "GetMDL",
-                weight: 2
-            },
-            {
-                text: "AWS",
-                weight: 4
-            },
-            {
-                text: "GCP",
-                weight: 4
-            },
-            {
-                text: "JUnit",
-                weight: 1
-            },
-            {
-                text: "Mocha",
-                weight: 1
-            },
-            {
-                text: "Jasmine",
-                weight: 1
-            },
-            {
-                text: "Nunjucks",
-                weight: 1
-            },
-            {
-                text: "SuperTest",
-                weight: 1
-            },
-            {
-                text: "Progalenor",
-                weight: 1
-            },
-            {
-                text: "Perfjankie",
-                weight: 1
-            },
-            {
-                text: "Protractor",
-                weight: 8
-            },
-            {
-                text: "Appium",
-                weight: 1
-            },
-            {
-                text: "Jenkins",
-                weight: 5,
-                html: {
-                    "class": "vertical"
-                }
-            },
-            {
-                text: "Logback",
-                weight: 1
-            },
-            {
-                text: "GruntJS",
-                weight: 1
-            },
-            {
-                text: "Chai JS",
-                weight: 5,
-                html: {
-                    "class": "vertical"
-                }
-            },
-            {
-                text: "ES6",
-                weight: 5
-            },
-            {
-                text: "Redis",
-                weight: 3
-            },
-            {
-                text: "MongoDB",
-                weight: 4
-            },
-            {
-                text: "My SQL",
-                weight: 3
-            },
-            {
-                text: "Hibernate",
-                weight: 2,
-                html: {
-                    "class": "vertical"
-                }
-            },
-            {
-                text: "JPA",
-                weight: 2
-            },
-            {
-                text: "Mongoose",
-                weight: 4
-            },
-            {
-                text: "Express JWT",
-                weight: 1,
-                html: {
-                    "class": "vertical"
-                }
-            },
-            {
-                text: "Twitter API",
-                weight: 2,
-                html: {
-                    "class": "vertical"
-                }
-            },
-            {
-                text: "CSS3",
-                weight: 8
-            },
-            {
-                text: "HTML5",
-                weight: 8
-            },
-            {
-                text: "Redux",
-                weight: 5
-            },
-            {
-                text: "Flux",
-                weight: 3
-            },
-            {
-                text: "Wiremock",
-                weight: 1
-            },
-            {
-                text: "Websockets",
-                weight: 1,
-                html: {
-                    "class": "vertical"
-                }
-            },
-            {
-                text: "Cheerio",
-                weight: 1
-            },
-            {
-                text: "Nodemon",
-                weight: 1
-            },
-            {
-                text: "PhoneGap",
-                weight: 1,
-                html: {
-                    "class": "vertical"
-                }
-            },
-            {
-                text: "XML",
-                weight: 2
-            },
-            {
-                text: "SQL",
-                weight: 3
-            },
-            {
-                text: "ElasticSearch",
-                weight: 2,
-                html: {
-                    "class": "vertical"
-                }
-            },
-            {
-                text: "Kibana",
-                weight: 2
-            },
-            {
-                text: "Thrift",
-                weight: 1
-            },
-            {
-                text: "EC2",
-                weight: 5
-            },
-            {
-                text: "Heroku",
-                weight: 2
-            },
-            {
-                text: "RabbitMQ",
-                weight: 1
-            },
-            {
-                text: "Fusion Charts",
-                weight: 4,
-                html: {
-                    "class": "vertical"
-                }
-            },
-            {
-                text: "Meteor JS",
-                weight: 2
-            },
-            {
-                text: "Reaction Commerce",
-                weight: 1
-            },
-            {
-                text: "Docker",
-                weight: 3
-            },
-            {
-                text: "Microservices",
-                weight: 9
-            },
-            {
-                text: "Functional Programming",
-                weight: 4
-            },
-            {
-                text: "UnderscoreJS",
-                weight: 2
-            },
-            {
-                text: "BackboneJS",
-                weight: 1,
-                html: {
-                    "class": "vertical"
-                }
-            },
-            {
-                text: "Handlebars",
-                weight: 1
-            },
-            {
-                text: "BigQuery",
-                weight: 2
-            },
-            {
-                text: "Agile",
-                weight: 6
-            },
-            {
-                text: "Gherkin",
-                weight: 3,
-                html: {
-                    "class": "vertical"
-                }
-            },
-            {
-                text: "Design Patterns",
-                weight: 4
-            },
-            {
-                text: "Postgre",
-                weight: 1
-            },
-            {
-                text: "Weblogic",
-                weight: 2
-            },
-            {
-                text: "Jersy",
-                weight: 1
-            },
-            {
-                text: "Charts JS",
-                weight: 2
-            },
-            {
-                text: "DynamoDB",
-                weight: 1
-            },
-            {
-                text: "Chrome Plugins",
-                weight: 1
-            },
-            {
-                text: "Swagger",
-                weight: 1
-            },
-            {
-                text: "NPM",
-                weight: 7
-            },
-            {
-                text: "AngularJS",
-                weight: 1
-            },
-            {
-                text: "SLF4J",
-                weight: 1
-            }
-        ];
-        $(function() {
-            $("#my_favorite_latin_words").jQCloud(word_list);
-        });
-    </script>
+        </script>
 
 </body>
 
