@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Parallax Template - Materialize</title>
+    <script src="https://unpkg.com/ionicons@4.2.0/dist/ionicons.js"></script>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
+    <link href="https://unpkg.com/ionicons@4.2.0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+
+    <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .intro h2 {
+            font-size: 32px;
+            font-weight: bold;
+            opacity: 0.6;
+            display: inline-block;
+        }
+
+        .intro {
+            text-align: center;
+        }
+
+        .social-ul li {
+            display: inline-block;
+            padding-right: 5px;
+            padding-left: 5px;
+        }
+
+        .social-ul a,
+        .modal a {
+            color: grey;
+            font-weight: 380;
+            font-size: 28px;
+        }
+
+        .modal a {
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .project-container {
+            height: 250px;
+        }
+
+        .custom-header {
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 1.8em;
+            opacity: 0.7;
+            margin-bottom: 50px;
+        }
+
+        .project-header {
+            border-bottom: 1px solid #dddddd;
+            opacity: 0.7;
+            text-align: center;
+            padding-bottom: 15px;
+            font-size: 22px;
+            font-weight: 500;
+        }
+
+        .center-text {
+            text-align: center;
+        }
+
+        .timeperiod {
+            opacity: 0.7;
+            font-size: 14px;
+        }
+
+        .timeperiod i {
+            margin-right: 15px;
+        }
+
+        .project-content {
+            font-weight: 300;
+            opacity: 0.7;
+        }
+
+         :focus {
+            outline: none;
+        }
+
+        .project-sub-header {
+            font-size: 18px;
+            font-weight: 400;
+            margin: 15px 0;
+            opacity: 0.7;
+        }
+
+        .responsibility {
+            margin-left: 10px;
+            margin-right: 20px;
+        }
+
+        .project-modal-close {
+            position: absolute;
+            right: 50px;
+        }
+
+        .indicator-item {
+            background-color: #abb1b3 !important;
+            height: 12px !important;
+            width: 12px !important;
+        }
+
+        .indicator-item.active {
+            background-color: #141415 !important;
+        }
+
+        .review {
+            font-size: 15px !important;
+            font-weight: 400 !important;
+            margin: 15px 0 !important;
+            opacity: 0.7 !important;
+            line-height: 1.5 rem;
+            font-style: italic;
+        }
+
+        .review:before {
+            display: block;
+            padding-left: 10px;
+            content: "\201C";
+            font-size: 80px;
+            position: absolute;
+            left: -20px;
+            top: -20px;
+            color: #7a7a7a;
+        }
+        .reviewer {
+            font-size: 16px;
+            font-weight: 800;
+            opacity: 0.9;
+            display: block;
+            font-style: italic;
+        }
+
+        .reviews {
+            max-height: 350px;
+        }
+
+        .reviews .card {
+            height: 70%;
+        }
+
+        .display-none {
+            display: none;
+        }
+
+        .expand-collapse {
+            margin-top: 25px;
+        }
+
+        .expand-collapse i {
+            font-size: 2.5rem;
+        }
+    </style>
+
+</head>
+
+<body style="background-color:#ecf0f1;">
+    <div style="margin-top:200px;"></div>
+
+    <div class="container" style="position:relative;">
+        <div class="section">
+
+            <div class="row">
+                <div class="col s12">
+                    <div id="profile" class="center-block animated zoomIn" style="text-align:center;position:absolute;left:50%;top:-97px;animation-delay:500ms;animation-duration:1000ms;position:absolute;width:180px;height:180px;top:-97px;left:50%;margin-left:-90px;z-index:1;display:block;border-radius:50%;background-color:#fff;padding:5px;box-shadow:0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.2);">
+                        <img src="profile-pic2.jpeg" style="display:inline-block;border-radius:50%;width:170px;height:170px;">
+                    </div>
+                    <div class="card">
+                        <div class="card-content intro">
+                            <h2 style="margin-top:80px;">Rakesh Kumar</h2>
+                            <span style="font-size:18px;font-weight:400;opacity:0.7;display:block;margin-bottom:25px;">Full Stack Developer</span>
+                            <div>
+                                <ul class="social-ul">
+                                    <li><a href="#0" target="_blank"><i class="fab fa-github"></i></a></li>
+                                    <li><a href="#0" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                                    <li><a href="#0" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                                    <li><a href="#0" target="_blank"><i class="fab fa-stack-overflow"></i></a></li>
+                                    <li><a href="#0" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                            <p style="font-weight:300;opacity:0.7;font-size:15px;padding: 0 100px;">I am a software engineer with 8 years of experience, working on both backend and frontend technologies. I am a full stack developer and worked on various mid-sized and large web applications. I am always open to new technologies
+                                and interested to work on SAAS based applications.</p>
+                        </div>
+                        <div class="card-action" style="text-align: center;">
+                            <div style="display:inline-block;">
+                                <a class="waves-effect waves-light btn blue-grey darken-1" style="text-transform:none;">Download CV</a>
+                                <a class="waves-effect waves-light btn blue-grey darken-1" style="text-transform:none;">Contact Me</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="section">
+            <h4 class="custom-header">Projects</h4>
+            <div class="row">
+                <!--MPL One -->
+                <div class="col s12 m6">
+                    <div class="card project-container">
+                        <div style="padding: 30px 20px;margin-top: 2px;">
+                            <h6 class="project-header">MPL One</h6>
+                            <div class="center-align timeperiod"><i class="fas fa-calendar-alt" style="margin-right:15px;"></i>Jun 2015 - Dec 2016</div>
+                            <p class="project-content center-text">One common UI experience across Demand-Supply-S&OP with process orchestration.</p>
+                            <div class="row center-text">
+                                <a class="btn blue-grey darken-1 waves-effect waves-light btn-primary custom-btn modal-trigger" href="#mplone">Read More</a>
+
+                                <div id="mplone" class="modal">
+                                    <div class="modal-content">
+                                        <div style="padding: 0px 20px;margin-top: 2px;">
+                                            <a href="#0" target="_blank" class="project-modal-close"><i class="fas fa-times"></i></a>
+                                            <h6 class="project-header">MPL One</h6>
+                                            <div class="center-align timeperiod project-sub-header">Stack</div>
+                                            <div class="chips" style="border-bottom:none;">
+                                                <div class="chip">Java</div>
+                                                <div class="chip">Javascript</div>
+                                                <div class="chip">App Engine</div>
+                                                <div class="chip">SASS</div>
+                                                <div class="chip">HTML5</div>
+                                                <div class="chip">Ext JS</div>
+                                                <div class="chip">Jquery</div>
+                                                <div class="chip">Spring</div>
+                                                <div class="chip">Oracle</div>
+                                                <div class="chip">Fusioncharts</div>
+                                            </div>
+                                            <div class="center-align timeperiod project-sub-header">Roles and Responsibilities</div>
+                                            <table class="striped">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <i class="far fa-hand-point-right responsibility"></i>Part of the team formed for developing the product from the scratch.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <i class="far fa-hand-point-right responsibility"></i>Worked on implementing customizable dashboard.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <i class="far fa-hand-point-right responsibility"></i>Worked on implementing a feature to maintain the measures (related to supply chain).</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Meru -->
+                <div class="col s12 m6">
+                    <div class="card project-container">
+                        <div style="padding: 30px 20px;margin-top: 2px;">
+                            <h6 class="project-header">Meru</h6>
+                            <div class="center-align timeperiod"><i class="fas fa-calendar-alt" style="margin-right:15px;"></i>Jan 2017 - Present</div>
+                            <p class="project-content center-text">Meru Cloud is a High Performance PAAS service running on AWS, scraping data from more than 100 Million urls per day from the world’s top 1000+ websites.</p>
+                            <div class="row center-text">
+                                <a class="btn blue-grey darken-1 waves-effect waves-light btn-primary custom-btn modal-trigger" href="#meru">Read More</a>
+
+                                <div id="meru" class="modal">
+                                    <div class="modal-content">
+                                        <div style="padding: 0px 20px;margin-top: 2px;">
+                                            <a href="#0" target="_blank" class="project-modal-close"><i class="fas fa-times"></i></a>
+                                            <h6 class="project-header">Meru</h6>
+                                            <div class="center-align timeperiod project-sub-header">Stack</div>
+                                            <div class="chips" style="border-bottom:none;">
+                                                <div class="chip">Java</div>
+                                                <div class="chip">Javascript</div>
+                                                <div class="chip">Groovy</div>
+                                                <div class="chip">MongoDB</div>
+                                                <div class="chip">HTML5</div>
+                                                <div class="chip">React JS</div>
+                                                <div class="chip">ELK Stack</div>
+                                                <div class="chip">Spring</div>
+                                                <div class="chip">Redux</div>
+                                                <div class="chip">Thrift</div>
+                                                <div class="chip">AsyncHttpClient</div>
+                                                <div class="chip">RabbitMQ</div>
+                                                <div class="chip">JSoup</div>
+                                                <div class="chip">Webpack</div>
+                                                <div class="chip">MaterialUI</div>
+                                            </div>
+                                            <div class="center-align timeperiod project-sub-header">Roles and Responsibilities</div>
+                                            <table class="striped">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <i class="far fa-hand-point-right responsibility"></i>Developed the Dashboard UI which helps in executing jobs, monitoring server health & server metrics & stats.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <i class="far fa-hand-point-right responsibility"></i>Integrated Twitter, Instagram, Youtube.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <i class="far fa-hand-point-right responsibility"></i>Improvised the DSL to support the configuration from within.</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- R4E-E2E  -->
+                <div class="col s12 m6">
+                    <div class="card project-container">
+                        <div style="padding: 30px 20px;margin-top: 2px;">
+                            <h6 class="project-header">R4E-E2E</h6>
+                            <div class="center-align timeperiod"><i class="fas fa-calendar-alt" style="margin-right:15px;"></i>Jun 2015 - Dec 2016</div>
+                            <p class="project-content center-text">One common UI experience across Demand-Supply-S&OP with process orchestration.</p>
+                            <div class="row center-text">
+                                <a class="btn blue-grey darken-1 waves-effect waves-light btn-primary custom-btn modal-trigger" href="#mplone">Read More</a>
+
+                                <div id="mplone" class="modal">
+                                    <div class="modal-content">
+                                        <div style="padding: 0px 20px;margin-top: 2px;">
+                                            <a href="#0" target="_blank" class="project-modal-close"><i class="fas fa-times"></i></a>
+                                            <h6 class="project-header">MPL One</h6>
+                                            <div class="center-align timeperiod project-sub-header">Stack</div>
+                                            <div class="chips" style="border-bottom:none;">
+                                                <div class="chip">Java</div>
+                                                <div class="chip">Javascript</div>
+                                                <div class="chip">App Engine</div>
+                                                <div class="chip">SASS</div>
+                                                <div class="chip">HTML5</div>
+                                                <div class="chip">Ext JS</div>
+                                                <div class="chip">Jquery</div>
+                                                <div class="chip">Spring</div>
+                                                <div class="chip">Oracle</div>
+                                                <div class="chip">Fusioncharts</div>
+                                            </div>
+                                            <div class="center-align timeperiod project-sub-header">Roles and Responsibilities</div>
+                                            <table class="striped">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <i class="far fa-hand-point-right responsibility"></i>Part of the team formed for developing the product from the scratch.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <i class="far fa-hand-point-right responsibility"></i>Worked on implementing customizable dashboard.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <i class="far fa-hand-point-right responsibility"></i>Worked on implementing a feature to maintain the measures (related to supply chain).</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Credential Bot -->
+                <div class="col s12 m6">
+                    <div class="card project-container">
+                        <div style="padding: 30px 20px;margin-top: 2px;">
+                            <h6 class="project-header">Credential Bot</h6>
+                            <div class="center-align timeperiod"><i class="fas fa-calendar-alt" style="margin-right:15px;"></i>Jun 2015 - Dec 2016</div>
+                            <p class="project-content center-text">One common UI experience across Demand-Supply-S&OP with process orchestration.</p>
+                            <div class="row center-text">
+                                <a class="btn blue-grey darken-1 waves-effect waves-light btn-primary custom-btn modal-trigger" href="#mplone">Read More</a>
+
+                                <div id="mplone" class="modal">
+                                    <div class="modal-content">
+                                        <div style="padding: 0px 20px;margin-top: 2px;">
+                                            <a href="#0" target="_blank" class="project-modal-close"><i class="fas fa-times"></i></a>
+                                            <h6 class="project-header">MPL One</h6>
+                                            <div class="center-align timeperiod project-sub-header">Stack</div>
+                                            <div class="chips" style="border-bottom:none;">
+                                                <div class="chip">Java</div>
+                                                <div class="chip">Javascript</div>
+                                                <div class="chip">App Engine</div>
+                                                <div class="chip">SASS</div>
+                                                <div class="chip">HTML5</div>
+                                                <div class="chip">Ext JS</div>
+                                                <div class="chip">Jquery</div>
+                                                <div class="chip">Spring</div>
+                                                <div class="chip">Oracle</div>
+                                                <div class="chip">Fusioncharts</div>
+                                            </div>
+                                            <div class="center-align timeperiod project-sub-header">Roles and Responsibilities</div>
+                                            <table class="striped">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <i class="far fa-hand-point-right responsibility"></i>Part of the team formed for developing the product from the scratch.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <i class="far fa-hand-point-right responsibility"></i>Worked on implementing customizable dashboard.</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <i class="far fa-hand-point-right responsibility"></i>Worked on implementing a feature to maintain the measures (related to supply chain).</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row display-none" id="test">
+                    <!-- GCP Billing Analysis -->
+                    <div class="col s12 m6">
+                        <div class="card project-container">
+                            <div style="padding: 30px 20px;margin-top: 2px;">
+                                <h6 class="project-header">GCP Billing Analysis</h6>
+                                <div class="center-align timeperiod"><i class="fas fa-calendar-alt" style="margin-right:15px;"></i>Jun 2015 - Dec 2016</div>
+                                <p class="project-content center-text">One common UI experience across Demand-Supply-S&OP with process orchestration.</p>
+                                <div class="row center-text">
+                                    <a class="btn blue-grey darken-1 waves-effect waves-light btn-primary custom-btn modal-trigger" href="#mplone">Read More</a>
+
+                                    <div id="mplone" class="modal">
+                                        <div class="modal-content">
+                                            <div style="padding: 0px 20px;margin-top: 2px;">
+                                                <a href="#0" target="_blank" class="project-modal-close"><i class="fas fa-times"></i></a>
+                                                <h6 class="project-header">GCP Billing Analysis</h6>
+                                                <div class="center-align timeperiod project-sub-header">Stack</div>
+                                                <div class="chips" style="border-bottom:none;">
+                                                    <div class="chip">Java</div>
+                                                    <div class="chip">Javascript</div>
+                                                    <div class="chip">App Engine</div>
+                                                    <div class="chip">SASS</div>
+                                                    <div class="chip">HTML5</div>
+                                                    <div class="chip">Ext JS</div>
+                                                    <div class="chip">Jquery</div>
+                                                    <div class="chip">Spring</div>
+                                                    <div class="chip">Oracle</div>
+                                                    <div class="chip">Fusioncharts</div>
+                                                </div>
+                                                <div class="center-align timeperiod project-sub-header">Roles and Responsibilities</div>
+                                                <table class="striped">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="far fa-hand-point-right responsibility"></i>Part of the team formed for developing the product from the scratch.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="far fa-hand-point-right responsibility"></i>Worked on implementing customizable dashboard.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="far fa-hand-point-right responsibility"></i>Worked on implementing a feature to maintain the measures (related to supply chain).</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- DCS -->
+                    <div class="col s12 m6">
+                        <div class="card project-container">
+                            <div style="padding: 30px 20px;margin-top: 2px;">
+                                <h6 class="project-header">DCS (Distribution Centric Supply Chain)</h6>
+                                <div class="center-align timeperiod"><i class="fas fa-calendar-alt" style="margin-right:15px;"></i>Jun 2015 - Dec 2016</div>
+                                <p class="project-content center-text">One common UI experience across Demand-Supply-S&OP with process orchestration.</p>
+                                <div class="row center-text">
+                                    <a class="btn blue-grey darken-1 waves-effect waves-light btn-primary custom-btn modal-trigger" href="#mplone">Read More</a>
+
+                                    <div id="mplone" class="modal">
+                                        <div class="modal-content">
+                                            <div style="padding: 0px 20px;margin-top: 2px;">
+                                                <a href="#0" target="_blank" class="project-modal-close"><i class="fas fa-times"></i></a>
+                                                <h6 class="project-header">DCS (Distribution Centric Supply Chain)</h6>
+                                                <div class="center-align timeperiod project-sub-header">Stack</div>
+                                                <div class="chips" style="border-bottom:none;">
+                                                    <div class="chip">Java</div>
+                                                    <div class="chip">Javascript</div>
+                                                    <div class="chip">App Engine</div>
+                                                    <div class="chip">SASS</div>
+                                                    <div class="chip">HTML5</div>
+                                                    <div class="chip">Ext JS</div>
+                                                    <div class="chip">Jquery</div>
+                                                    <div class="chip">Spring</div>
+                                                    <div class="chip">Oracle</div>
+                                                    <div class="chip">Fusioncharts</div>
+                                                </div>
+                                                <div class="center-align timeperiod project-sub-header">Roles and Responsibilities</div>
+                                                <table class="striped">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="far fa-hand-point-right responsibility"></i>Part of the team formed for developing the product from the scratch.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="far fa-hand-point-right responsibility"></i>Worked on implementing customizable dashboard.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="far fa-hand-point-right responsibility"></i>Worked on implementing a feature to maintain the measures (related to supply chain).</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- JDA Platform -->
+                    <div class="col s12 m6">
+                        <div class="card project-container">
+                            <div style="padding: 30px 20px;margin-top: 2px;">
+                                <h6 class="project-header">JDA Platform (Webworks)</h6>
+                                <div class="center-align timeperiod"><i class="fas fa-calendar-alt" style="margin-right:15px;"></i>Jun 2015 - Dec 2016</div>
+                                <p class="project-content center-text">One common UI experience across Demand-Supply-S&OP with process orchestration.</p>
+                                <div class="row center-text">
+                                    <a class="btn blue-grey darken-1 waves-effect waves-light btn-primary custom-btn modal-trigger" href="#mplone">Read More</a>
+
+                                    <div id="mplone" class="modal">
+                                        <div class="modal-content">
+                                            <div style="padding: 0px 20px;margin-top: 2px;">
+                                                <a href="#0" target="_blank" class="project-modal-close"><i class="fas fa-times"></i></a>
+                                                <h6 class="project-header">JDA Platform (Webworks)</h6>
+                                                <div class="center-align timeperiod project-sub-header">Stack</div>
+                                                <div class="chips" style="border-bottom:none;">
+                                                    <div class="chip">Java</div>
+                                                    <div class="chip">Javascript</div>
+                                                    <div class="chip">App Engine</div>
+                                                    <div class="chip">SASS</div>
+                                                    <div class="chip">HTML5</div>
+                                                    <div class="chip">Ext JS</div>
+                                                    <div class="chip">Jquery</div>
+                                                    <div class="chip">Spring</div>
+                                                    <div class="chip">Oracle</div>
+                                                    <div class="chip">Fusioncharts</div>
+                                                </div>
+                                                <div class="center-align timeperiod project-sub-header">Roles and Responsibilities</div>
+                                                <table class="striped">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="far fa-hand-point-right responsibility"></i>Part of the team formed for developing the product from the scratch.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="far fa-hand-point-right responsibility"></i>Worked on implementing customizable dashboard.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="far fa-hand-point-right responsibility"></i>Worked on implementing a feature to maintain the measures (related to supply chain).</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- MfgABPP -->
+                    <div class="col s12 m6">
+                        <div class="card project-container">
+                            <div style="padding: 30px 20px;margin-top: 2px;">
+                                <h6 class="project-header">Manufacturing ABPP</h6>
+                                <div class="center-align timeperiod"><i class="fas fa-calendar-alt" style="margin-right:15px;"></i>Jun 2015 - Dec 2016</div>
+                                <p class="project-content center-text">One common UI experience across Demand-Supply-S&OP with process orchestration.</p>
+                                <div class="row center-text">
+                                    <a class="btn blue-grey darken-1 waves-effect waves-light btn-primary custom-btn modal-trigger" href="#mplone">Read More</a>
+
+                                    <div id="mplone" class="modal">
+                                        <div class="modal-content">
+                                            <div style="padding: 0px 20px;margin-top: 2px;">
+                                                <a href="#0" target="_blank" class="project-modal-close"><i class="fas fa-times"></i></a>
+                                                <h6 class="project-header">Manufacturing ABPP</h6>
+                                                <div class="center-align timeperiod project-sub-header">Stack</div>
+                                                <div class="chips" style="border-bottom:none;">
+                                                    <div class="chip">Java</div>
+                                                    <div class="chip">Javascript</div>
+                                                    <div class="chip">App Engine</div>
+                                                    <div class="chip">SASS</div>
+                                                    <div class="chip">HTML5</div>
+                                                    <div class="chip">Ext JS</div>
+                                                    <div class="chip">Jquery</div>
+                                                    <div class="chip">Spring</div>
+                                                    <div class="chip">Oracle</div>
+                                                    <div class="chip">Fusioncharts</div>
+                                                </div>
+                                                <div class="center-align timeperiod project-sub-header">Roles and Responsibilities</div>
+                                                <table class="striped">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="far fa-hand-point-right responsibility"></i>Part of the team formed for developing the product from the scratch.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="far fa-hand-point-right responsibility"></i>Worked on implementing customizable dashboard.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="far fa-hand-point-right responsibility"></i>Worked on implementing a feature to maintain the measures (related to supply chain).</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- UFOSUPPS -->
+                    <div class="col s12 m6">
+                        <div class="card project-container">
+                            <div style="padding: 30px 20px;margin-top: 2px;">
+                                <h6 class="project-header">UFOSUPPS</h6>
+                                <div class="center-align timeperiod"><i class="fas fa-calendar-alt" style="margin-right:15px;"></i>Jun 2015 - Dec 2016</div>
+                                <p class="project-content center-text">One common UI experience across Demand-Supply-S&OP with process orchestration.</p>
+                                <div class="row center-text">
+                                    <a class="btn blue-grey darken-1 waves-effect waves-light btn-primary custom-btn modal-trigger" href="#mplone">Read More</a>
+
+                                    <div id="mplone" class="modal">
+                                        <div class="modal-content">
+                                            <div style="padding: 0px 20px;margin-top: 2px;">
+                                                <a href="#0" target="_blank" class="project-modal-close"><i class="fas fa-times"></i></a>
+                                                <h6 class="project-header">UFOSUPPS</h6>
+                                                <div class="center-align timeperiod project-sub-header">Stack</div>
+                                                <div class="chips" style="border-bottom:none;">
+                                                    <div class="chip">Java</div>
+                                                    <div class="chip">Javascript</div>
+                                                    <div class="chip">App Engine</div>
+                                                    <div class="chip">SASS</div>
+                                                    <div class="chip">HTML5</div>
+                                                    <div class="chip">Ext JS</div>
+                                                    <div class="chip">Jquery</div>
+                                                    <div class="chip">Spring</div>
+                                                    <div class="chip">Oracle</div>
+                                                    <div class="chip">Fusioncharts</div>
+                                                </div>
+                                                <div class="center-align timeperiod project-sub-header">Roles and Responsibilities</div>
+                                                <table class="striped">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="far fa-hand-point-right responsibility"></i>Part of the team formed for developing the product from the scratch.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="far fa-hand-point-right responsibility"></i>Worked on implementing customizable dashboard.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="far fa-hand-point-right responsibility"></i>Worked on implementing a feature to maintain the measures (related to supply chain).</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- iTrops -->
+                    <div class="col s12 m6">
+                        <div class="card project-container">
+                            <div style="padding: 30px 20px;margin-top: 2px;">
+                                <h6 class="project-header">iTrops (Intelligent Transportation Operating Systems)</h6>
+                                <div class="center-align timeperiod"><i class="fas fa-calendar-alt" style="margin-right:15px;"></i>Jun 2015 - Dec 2016</div>
+                                <p class="project-content center-text">One common UI experience across Demand-Supply-S&OP with process orchestration.</p>
+                                <div class="row center-text">
+                                    <a class="btn blue-grey darken-1 waves-effect waves-light btn-primary custom-btn modal-trigger" href="#mplone">Read More</a>
+
+                                    <div id="mplone" class="modal">
+                                        <div class="modal-content">
+                                            <div style="padding: 0px 20px;margin-top: 2px;">
+                                                <a href="#0" target="_blank" class="project-modal-close"><i class="fas fa-times"></i></a>
+                                                <h6 class="project-header">MPL One</h6>
+                                                <div class="center-align timeperiod project-sub-header">Stack</div>
+                                                <div class="chips" style="border-bottom:none;">
+                                                    <div class="chip">Java</div>
+                                                    <div class="chip">Javascript</div>
+                                                    <div class="chip">App Engine</div>
+                                                    <div class="chip">SASS</div>
+                                                    <div class="chip">HTML5</div>
+                                                    <div class="chip">Ext JS</div>
+                                                    <div class="chip">Jquery</div>
+                                                    <div class="chip">Spring</div>
+                                                    <div class="chip">Oracle</div>
+                                                    <div class="chip">Fusioncharts</div>
+                                                </div>
+                                                <div class="center-align timeperiod project-sub-header">Roles and Responsibilities</div>
+                                                <table class="striped">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="far fa-hand-point-right responsibility"></i>Part of the team formed for developing the product from the scratch.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="far fa-hand-point-right responsibility"></i>Worked on implementing customizable dashboard.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="far fa-hand-point-right responsibility"></i>Worked on implementing a feature to maintain the measures (related to supply chain).</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ciencia Journals -->
+                    <div class="col s12 m6">
+                        <div class="card project-container">
+                            <div style="padding: 30px 20px;margin-top: 2px;">
+                                <h6 class="project-header">Ciencia Journals</h6>
+                                <div class="center-align timeperiod"><i class="fas fa-calendar-alt" style="margin-right:15px;"></i>Jun 2015 - Dec 2016</div>
+                                <p class="project-content center-text">One common UI experience across Demand-Supply-S&OP with process orchestration.</p>
+                                <div class="row center-text">
+                                    <a class="btn blue-grey darken-1 waves-effect waves-light btn-primary custom-btn modal-trigger" href="#mplone">Read More</a>
+
+                                    <div id="mplone" class="modal">
+                                        <div class="modal-content">
+                                            <div style="padding: 0px 20px;margin-top: 2px;">
+                                                <a href="#0" target="_blank" class="project-modal-close"><i class="fas fa-times"></i></a>
+                                                <h6 class="project-header">MPL One</h6>
+                                                <div class="center-align timeperiod project-sub-header">Stack</div>
+                                                <div class="chips" style="border-bottom:none;">
+                                                    <div class="chip">Java</div>
+                                                    <div class="chip">Javascript</div>
+                                                    <div class="chip">App Engine</div>
+                                                    <div class="chip">SASS</div>
+                                                    <div class="chip">HTML5</div>
+                                                    <div class="chip">Ext JS</div>
+                                                    <div class="chip">Jquery</div>
+                                                    <div class="chip">Spring</div>
+                                                    <div class="chip">Oracle</div>
+                                                    <div class="chip">Fusioncharts</div>
+                                                </div>
+                                                <div class="center-align timeperiod project-sub-header">Roles and Responsibilities</div>
+                                                <table class="striped">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="far fa-hand-point-right responsibility"></i>Part of the team formed for developing the product from the scratch.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="far fa-hand-point-right responsibility"></i>Worked on implementing customizable dashboard.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="far fa-hand-point-right responsibility"></i>Worked on implementing a feature to maintain the measures (related to supply chain).</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Trippo -->
+                    <div class="col s12 m6">
+                        <div class="card project-container">
+                            <div style="padding: 30px 20px;margin-top: 2px;">
+                                <h6 class="project-header">Trippo</h6>
+                                <div class="center-align timeperiod"><i class="fas fa-calendar-alt" style="margin-right:15px;"></i>Jun 2015 - Dec 2016</div>
+                                <p class="project-content center-text">One common UI experience across Demand-Supply-S&OP with process orchestration.</p>
+                                <div class="row center-text">
+                                    <a class="btn blue-grey darken-1 waves-effect waves-light btn-primary custom-btn modal-trigger" href="#mplone">Read More</a>
+
+                                    <div id="mplone" class="modal">
+                                        <div class="modal-content">
+                                            <div style="padding: 0px 20px;margin-top: 2px;">
+                                                <a href="#0" target="_blank" class="project-modal-close"><i class="fas fa-times"></i></a>
+                                                <h6 class="project-header">MPL One</h6>
+                                                <div class="center-align timeperiod project-sub-header">Stack</div>
+                                                <div class="chips" style="border-bottom:none;">
+                                                    <div class="chip">Java</div>
+                                                    <div class="chip">Javascript</div>
+                                                    <div class="chip">App Engine</div>
+                                                    <div class="chip">SASS</div>
+                                                    <div class="chip">HTML5</div>
+                                                    <div class="chip">Ext JS</div>
+                                                    <div class="chip">Jquery</div>
+                                                    <div class="chip">Spring</div>
+                                                    <div class="chip">Oracle</div>
+                                                    <div class="chip">Fusioncharts</div>
+                                                </div>
+                                                <div class="center-align timeperiod project-sub-header">Roles and Responsibilities</div>
+                                                <table class="striped">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="far fa-hand-point-right responsibility"></i>Part of the team formed for developing the product from the scratch.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="far fa-hand-point-right responsibility"></i>Worked on implementing customizable dashboard.</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <i class="far fa-hand-point-right responsibility"></i>Worked on implementing a feature to maintain the measures (related to supply chain).</td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="row center-text">
+                    <a class="btn-floating blue-grey darken-1 waves-effect waves-light btn-large expand-collapse" id="expand"><i class="material-icons">arrow_drop_down</i></a>
+                    <a class="btn-floating blue-grey darken-1 waves-effect waves-light btn-large display-none expand-collapse" id="collapse"><i class="material-icons">arrow_drop_up</i></a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="section">
+            <h4 class="custom-header">Reviews</h4>
+
+            <div class="carousel carousel-slider center reviews" style="max-height:350px;">
+                <div class="carousel-item" href="#one!">
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="review">"Rakesh worked on my team on a number of strategic projects that I managed at JDA Software. During this time I observed the following traits about Rakesh which will make him an asset to any team. Rakesh is passionate about
+                                writing code, sharing his ideas and solving problems in software development. He stays up-to-date on the latest technologies. He understands instructions quickly and is flexible and agile when changes have to be made to
+                                the original plan. Rakesh’s enthusiasm and friendly demeanor made him well-liked and respected by his fellow associates.."</p>
+                            <span class="reviewer">- Paromita Sarkar, Director of Software Engineering/Development </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" href="#two!">
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="review">I got to know Rakesh on the first day I joined JDA. He was the first person who came forward to talk to me and helped me setup my work station. When I thought he was just another casual team members, that is when I found the
+                                features that he has worked on. He developed the search functionality, something that is most widely used, the working on changing the look and feel of the application by bringing in UX suggestions. Next he was involved
+                                in most prestigious projects, the MPL One, harbouring the platform side of the features. In spite of working on highly demanding projects, he has never hesitated helping anyone who has come to seek his help. Whenever he
+                                felt his work had become monotonous, he indulged in learning new skills, which has definitely helped him grow professionally and personally. I wish Rakesh the best in whatever he tries to pursue. Good Luck!!!</p>
+                            <span class="reviewer">- Shashi Kiran Nandivada, Project Lead at JDA Software</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" href="#three!">
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="review">It’s been almost an year working with Rakesh, he is one of the best team member I have worked with. He is passionate about technology and stays upto date on the latest technologies he is working on. He developed Automation
+                                framework for UI, REST API, Thrift API, Mobile-Android-iOS in a behavior oriented approach from scratch. Also came up with a concept of Hybrid scenarios which combines all the suites mentioned before (the complete end to
+                                end). Done a research on running automation scripts on AWS machines Vs Browser Stack/Saucelabs and effectively came up with a plan of in-house hosting & Scheduling on AWS with more performance and less cost. Implemented
+                                the same and successfully providing daily reports in an intuitive way which are more useful in identifying failure ASAP.</p>
+                            <span class="reviewer">- Jeevan Jyothi, QA Manager at Reputation.com </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" href="#four!">
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="review">Rakesh is my colleague in JDA company. I have worked with him for almost 5 years, he is one of the best team member. He has developed many critical feature’s and solved critical issues. He is very passionate about new technologies.
+                                Especially he is expert at UI technologies. Any critical issue related to UI, first we will contact him for suggestions. He is very pro-active and try to solve the issues/problems of other team members. Also he didn’t miss
+                                any competition conducted related to technology in company. Because of his helping nature, he become a good friend. All the Best Rakesh.</p>
+                            <span class="reviewer">- Suresh Yadam, Technical Architect at JDA Hyderabad </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" href="#five!">
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="review">I worked with Rakesh for more than 2 years. We were having cross platform dependency. Rakesh was so prompt to solve the issues coming to his way. He has very good problem solving and debugging Skills. He is quick learner, hardworking
+                                and knowledgeable person.</p>
+                            <span class="reviewer">- Sheetal Sisodiya, Senior Software Engineer at JDA Software </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" href="#six!">
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="review">At JDA I was lead for Rakesh. His first assignment with me was Type ahead search and Animation fly out for prompted search, and he delivered with great quality. He has immensely contributed towards critical projects like MPL
+                                one. He was one of the single point of contact for any kind of UI issues. He is in most demand among all product teams for his expertise in UI skills. He is committed,hard-workingg and has passion towards the product and
+                                technology. Rakesh is an independent learner who always thinks out of box. He always thrives to provide the best solutions and complete the assigned task on or before time and with great quality. He has a passion towards
+                                learning new UI technologies which have made him a great a programmer.</p>
+                            <span class="reviewer">- Himansu Rout, Project Lead at JDA Software</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" href="#seven!">
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="review">Rakesh is a very hardworking dedicated person who takes his work with utmost seriousness. Has great problem solving skills and in-depth technical knowledge. He was our team's go-to person for any and all problems. He is never
+                                the one to hesitate to help others and is a great team player. Last but not the least, Rakesh is an avid learner of latest technologies.</p>
+                            <span class="reviewer">- Jitu Dey, Software Engineer at JDA Software </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item" href="#seven!">
+                    <div class="card">
+                        <div class="card-content">
+                            <p class="review">I had the pleasure of working with Rakesh for over a year at Reputation.com. He is a diligent and dedicated person. He put in immense effort into researching to get to an automation framework that would carter to the needs
+                                of the QA team and would scale across multiple platforms like Web , APIs and mobile. He worked towards implementing and streamlining the automation process at Reputation.com which has greatly improved the product quality.
+                                Rakesh also puts in extra effort into mentoring and guiding other team mates. Besides this, his willingness to help others and be accommodative of other's ideas has made him a great team player!</p>
+                            <span class="reviewer">- Suganya Kanagavel, QA Engineer at Reputation.com </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer blue-grey darken-1">
+
+        <div class="footer-copyright blue-grey darken-1">
+            <div class="container center-text">
+                Copyright Rakesh Kumar 2018
+            </div>
+        </div>
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+        });
+
+        // Or with jQuery
+
+        $(document).ready(function() {
+            $('.modal').modal();
+
+            var instance = M.Carousel.init({
+                fullWidth: true,
+                indicators: true
+            });
+
+            // Or with jQuery
+
+            $('.carousel.carousel-slider').carousel({
+                fullWidth: true,
+                indicators: true
+            });
+
+            function autoplay() {
+             $('.carousel').carousel('next');
+             setTimeout(autoplay, 15000);
+            }
+            setTimeout(autoplay, 15000);
+
+            $("#expand").click(() => {
+                //$('#test').removeClass('scale-out').addClass('scale-in');
+                $('#test').slideDown(1000);
+                $('#expand').addClass('display-none');
+                $('#collapse').removeClass('display-none');
+            });
+            $("#collapse").click(() => {
+                //$('#test').removeClass('scale-in').addClass('scale-out');
+                $('#test').slideUp(1000);
+                $('#expand').removeClass('display-none');
+                $('#collapse').addClass('display-none');
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
