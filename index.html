@@ -13,7 +13,7 @@
     <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection">
     <link href="https://unpkg.com/ionicons@4.2.0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-
+    <link rel="stylesheet" type="text/css" href="css/jqcloud.css" />
 
     <style>
         * {
@@ -164,6 +164,37 @@
 
         .expand-collapse i {
             font-size: 2.5rem;
+        }
+
+        div.jqcloud span.vertical {
+          -webkit-writing-mode: vertical-rl;
+          writing-mode: tb-rl;
+        }
+
+        /* On screens that are 992px wide or less, the background color is blue */
+        @media screen and (max-width: 1100px) {
+          .stack {
+            zoom : 80%;
+          }
+        }
+
+        @media screen and (max-width: 992px) {
+          .stack {
+            zoom : 70%;
+          }
+        }
+
+        /* On screens that are 600px wide or less, the background color is olive */
+        @media screen and (max-width: 600px) {
+            .stack {
+              zoom : 50%;
+            }
+        }
+
+        @media screen and (max-width: 400px) {
+            .stack {
+              zoom : 30%;
+            }
         }
     </style>
 
@@ -862,7 +893,18 @@
         </div>
     </div>
 
-
+    <div class="container">
+        <div class="section">
+            <h4 class="custom-header">Stack</h4>
+            <div class="row center-text">
+              <div class="card">
+                  <div class="card-content">
+                      <div id="my_favorite_latin_words" style="width: 800px; height:450px; border: 0px solid #ccc;display:inline-block;" class="stack"></div>
+                  </div>
+              </div>
+            </div>
+        </div>
+    </div>
 
     <div class="container">
         <div class="section">
@@ -953,6 +995,7 @@
             </div>
         </div>
     </div>
+
     <footer class="page-footer blue-grey darken-1">
 
         <div class="footer-copyright blue-grey darken-1">
@@ -967,6 +1010,7 @@
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
+    <script type="text/javascript" src="js/jqcloud-1.0.4.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var elems = document.querySelectorAll('.modal');
@@ -1010,7 +1054,112 @@
             });
         });
     </script>
-
+    <script type="text/javascript">
+      var word_list = [
+        {text: "Java", weight: 10, link: "https://github.com/DukeLeNoir/jQCloud"},
+        {text: "Javascript", weight: 10, html: {title: "My Title", "class": "custom-class"}, link: {href: "http://jquery.com/", target: "_blank"}},
+        {text: "NodeJS", weight: 8, html: {"class": "vertical"}},
+        {text: "ReactJS", weight: 8},
+        {text: "Gulp", weight: 5},
+        {text: "Babel", weight: 2, html: {"class": "vertical"}},
+        {text: "Algorithms", weight: 6},
+        {text: "Data Structures", weight: 6},
+        {text: "ExtJS", weight: 7},
+        {text: "DHTMLX", weight: 7},
+        {text: "J2EE", weight: 5},
+        {text: "Webpack", weight: 2},
+        {text: "Spring", weight: 5, html: {"class": "vertical"}},
+        {text: "JSOUP", weight: 2},
+        {text: "Gradle", weight: 4},
+        {text: "Maven", weight: 4},
+        {text: "Groovy", weight: 3, html: {"class": "vertical"}},
+        {text: "Ant", weight: 3},
+        {text: "REST", weight: 5},
+        {text: "ExpressJS", weight: 4},
+        {text: "PassportJS", weight: 1, html: {"class": "vertical"}},
+        {text: "Q", weight: 5},
+        {text: "Async", weight: 1},
+        {text: "CucumberJS", weight: 5},
+        {text: "SASS", weight: 3},
+        {text: "ES Lint", weight: 1},
+        {text: "JSF", weight: 1},
+        {text: "Flux", weight: 1, html: {"class": "vertical"}},
+        {text: "Primefaces", weight: 1, html: {"class": "vertical"}},
+        {text: "DWR", weight: 2},
+        {text: "JQuery", weight: 9, html: {"class": "vertical"}},
+        {text: "JQuery Mobile", weight: 1},
+        {text: "Bootstrap", weight: 4},
+        {text: "Material Design", weight: 4},
+        {text: "GetMDL", weight: 2},
+        {text: "AWS", weight: 4},
+        {text: "GCP", weight: 4},
+        {text: "JUnit", weight: 1},
+        {text: "Mocha", weight: 1},
+        {text: "Jasmine", weight: 1},
+        {text: "Nunjucks", weight: 1},
+        {text: "SuperTest", weight: 1},
+        {text: "Progalenor", weight: 1},
+        {text: "Perfjankie", weight: 1},
+        {text: "Protractor", weight: 8},
+        {text: "Appium", weight: 1},
+        {text: "Jenkins", weight: 5, html: {"class": "vertical"}},
+        {text: "Logback", weight: 1},
+        {text: "GruntJS", weight: 1},
+        {text: "Chai JS", weight: 5, html: {"class": "vertical"}},
+        {text: "ES6", weight: 5},
+        {text: "Redis", weight: 3},
+        {text: "MongoDB", weight: 4},
+        {text: "My SQL", weight: 3},
+        {text: "Hibernate", weight: 2, html: {"class": "vertical"}},
+        {text: "JPA", weight: 2},
+        {text: "Mongoose", weight: 4},
+        {text: "Express JWT", weight: 1, html: {"class": "vertical"}},
+        {text: "Twitter API", weight: 2, html: {"class": "vertical"}},
+        {text: "CSS3", weight: 8},
+        {text: "HTML5", weight: 8},
+        {text: "Redux", weight: 5},
+        {text: "Flux", weight: 3},
+        {text: "Wiremock", weight: 1},
+        {text: "Websockets", weight: 1, html: {"class": "vertical"}},
+        {text: "Cheerio", weight: 1},
+        {text: "Nodemon", weight: 1},
+        {text: "PhoneGap", weight: 1, html: {"class": "vertical"}},
+        {text: "XML", weight: 2},
+        {text: "SQL", weight: 3},
+        {text: "ElasticSearch", weight: 2, html: {"class": "vertical"}},
+        {text: "Kibana", weight: 1},
+        {text: "Thrift", weight: 1},
+        {text: "EC2", weight: 5},
+        {text: "Heroku", weight: 2},
+        {text: "RabbitMQ", weight: 1},
+        {text: "Fusion Charts", weight: 4, html: {"class": "vertical"}},
+        {text: "Meteor JS", weight: 2},
+        {text: "Reaction Commerce", weight: 1},
+        {text: "Docker", weight: 3},
+        {text: "Microservices", weight: 9},
+        {text: "Functional Programming", weight: 4},
+        {text: "UnderscoreJS", weight: 2},
+        {text: "BackboneJS", weight: 1, html: {"class": "vertical"}},
+        {text: "Handlebars", weight: 1},
+        {text: "BigQuery", weight: 2},
+        {text: "Agile", weight: 6},
+        {text: "Gherkin", weight: 3, html: {"class": "vertical"}},
+        {text: "Design Patterns", weight: 4},
+        {text: "Postgre", weight: 1},
+        {text: "Weblogic", weight: 2},
+        {text: "Jersy", weight: 1},
+        {text: "Charts JS", weight: 2},
+        {text: "DynamoDB", weight: 1},
+        {text: "Chrome Plugins", weight: 1},
+        {text: "Swagger", weight: 1},
+        {text: "NPM", weight: 7},
+        {text: "AngularJS", weight: 1},
+        {text: "SLF4J", weight: 1}
+      ];
+      $(function() {
+        $("#my_favorite_latin_words").jQCloud(word_list);
+      });
+    </script>
 
 </body>
 
