@@ -138,6 +138,7 @@
             top: -20px;
             color: #7a7a7a;
         }
+
         .reviewer {
             font-size: 16px;
             font-weight: 800;
@@ -167,37 +168,49 @@
         }
 
         .fa-hand-point-right {
-            color:#00838f;
+            color: #00838f;
+        }
+
+        .details .icon {
+          font-size: 22px;
+          font-weight: 700;
+          margin-bottom: 8px;
+        }
+        .details .content {
+            display:block;
+            font-size: 16px;
+            font-weight: 300;
+            margin-bottom: 12px;
         }
 
         div.jqcloud span.vertical {
-          -webkit-writing-mode: vertical-rl;
-          writing-mode: tb-rl;
+            -webkit-writing-mode: vertical-rl;
+            writing-mode: tb-rl;
         }
-
         /* On screens that are 992px wide or less, the background color is blue */
+
         @media screen and (max-width: 1100px) {
-          .stack {
-            zoom : 80%;
-          }
+            .stack {
+                zoom: 80%;
+            }
         }
 
         @media screen and (max-width: 992px) {
-          .stack {
-            zoom : 70%;
-          }
+            .stack {
+                zoom: 70%;
+            }
         }
-
         /* On screens that are 600px wide or less, the background color is olive */
+
         @media screen and (max-width: 600px) {
             .stack {
-              zoom : 50%;
+                zoom: 50%;
             }
         }
 
         @media screen and (max-width: 400px) {
             .stack {
-              zoom : 30%;
+                zoom: 30%;
             }
         }
     </style>
@@ -233,7 +246,7 @@
                         <div class="card-action" style="text-align: center;">
                             <div style="display:inline-block;">
                                 <a class="waves-effect waves-light btn cyan darken-2" style="text-transform:none;">Download CV</a>
-                                <a class="waves-effect waves-light btn cyan darken-2" style="text-transform:none;">Contact Me</a>
+                                <a href="#contact" class="waves-effect waves-light btn cyan darken-2" style="text-transform:none;">Contact Me</a>
                             </div>
                         </div>
                     </div>
@@ -900,11 +913,11 @@
         <div class="section">
             <h4 class="custom-header">Stack</h4>
             <div class="row center-text">
-              <div class="card">
-                  <div class="card-content">
-                      <div id="my_favorite_latin_words" style="width: 800px; height:450px; border: 0px solid #ccc;display:inline-block;" class="stack"></div>
-                  </div>
-              </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div id="my_favorite_latin_words" style="width: 800px; height:450px; border: 0px solid #ccc;display:inline-block;" class="stack"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -999,6 +1012,40 @@
         </div>
     </div>
 
+    <div class="container">
+        <div class="section">
+            <div class="row">
+                <div class="col s12 m3">
+                </div>
+                <div class="col s12 m6">
+                    <div class="card center-text" id="contact" style="background-color:#0097a7;color:#FFF;">
+                        <div class="card-content">
+                            <ul class="text-center details" data-aos="fade" data-aos-delay="200" data-aos-offset="0">
+                                <li>
+                                    <i class="fas fa-phone icon"></i>
+                                    <span class="content">+91 9032498952</span>
+                                </li>
+
+                                <li>
+                                    <i class="fas fa-envelope icon"></i>
+                                    <span class="content">rakhi.b4@gmail.com</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-globe icon"></i>
+                                    <span class="content">www.srakeshkumar.com</span>
+                                </li>
+                                <li>
+                                    <i class="fas fa-map-marker-alt icon"></i>
+                                    <span class="content">Flat No 513, Jayasudhas Mythri Vihar, Hyderabad</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
     <footer class="page-footer cyan darken-2">
 
         <div class="footer-copyright cyan darken-2">
@@ -1038,8 +1085,8 @@
             });
 
             function autoplay() {
-             $('.carousel').carousel('next');
-             setTimeout(autoplay, 15000);
+                $('.carousel').carousel('next');
+                setTimeout(autoplay, 15000);
             }
             setTimeout(autoplay, 15000);
 
@@ -1058,110 +1105,464 @@
         });
     </script>
     <script type="text/javascript">
-      var word_list = [
-        {text: "Java", weight: 10, link: "https://github.com/DukeLeNoir/jQCloud"},
-        {text: "Javascript", weight: 10},
-        {text: "NodeJS", weight: 8, html: {"class": "vertical"}},
-        {text: "ReactJS", weight: 8},
-        {text: "Gulp", weight: 5},
-        {text: "Babel", weight: 2, html: {"class": "vertical"}},
-        {text: "Algorithms", weight: 6},
-        {text: "Data Structures", weight: 6},
-        {text: "ExtJS", weight: 7},
-        {text: "DHTMLX", weight: 7},
-        {text: "J2EE", weight: 5},
-        {text: "Webpack", weight: 2},
-        {text: "Spring", weight: 5, html: {"class": "vertical"}},
-        {text: "JSOUP", weight: 2},
-        {text: "Gradle", weight: 4},
-        {text: "Maven", weight: 4},
-        {text: "Groovy", weight: 3, html: {"class": "vertical"}},
-        {text: "Ant", weight: 3},
-        {text: "REST", weight: 5},
-        {text: "ExpressJS", weight: 4},
-        {text: "PassportJS", weight: 1, html: {"class": "vertical"}},
-        {text: "Q", weight: 5},
-        {text: "Async", weight: 1},
-        {text: "CucumberJS", weight: 5},
-        {text: "SASS", weight: 3},
-        {text: "ES Lint", weight: 1},
-        {text: "JSF", weight: 1},
-        {text: "Flux", weight: 1, html: {"class": "vertical"}},
-        {text: "Primefaces", weight: 1, html: {"class": "vertical"}},
-        {text: "DWR", weight: 2},
-        {text: "JQuery", weight: 9, html: {"class": "vertical"}},
-        {text: "JQuery Mobile", weight: 1},
-        {text: "Bootstrap", weight: 4},
-        {text: "Material Design", weight: 4},
-        {text: "GetMDL", weight: 2},
-        {text: "AWS", weight: 4},
-        {text: "GCP", weight: 4},
-        {text: "JUnit", weight: 1},
-        {text: "Mocha", weight: 1},
-        {text: "Jasmine", weight: 1},
-        {text: "Nunjucks", weight: 1},
-        {text: "SuperTest", weight: 1},
-        {text: "Progalenor", weight: 1},
-        {text: "Perfjankie", weight: 1},
-        {text: "Protractor", weight: 8},
-        {text: "Appium", weight: 1},
-        {text: "Jenkins", weight: 5, html: {"class": "vertical"}},
-        {text: "Logback", weight: 1},
-        {text: "GruntJS", weight: 1},
-        {text: "Chai JS", weight: 5, html: {"class": "vertical"}},
-        {text: "ES6", weight: 5},
-        {text: "Redis", weight: 3},
-        {text: "MongoDB", weight: 4},
-        {text: "My SQL", weight: 3},
-        {text: "Hibernate", weight: 2, html: {"class": "vertical"}},
-        {text: "JPA", weight: 2},
-        {text: "Mongoose", weight: 4},
-        {text: "Express JWT", weight: 1, html: {"class": "vertical"}},
-        {text: "Twitter API", weight: 2, html: {"class": "vertical"}},
-        {text: "CSS3", weight: 8},
-        {text: "HTML5", weight: 8},
-        {text: "Redux", weight: 5},
-        {text: "Flux", weight: 3},
-        {text: "Wiremock", weight: 1},
-        {text: "Websockets", weight: 1, html: {"class": "vertical"}},
-        {text: "Cheerio", weight: 1},
-        {text: "Nodemon", weight: 1},
-        {text: "PhoneGap", weight: 1, html: {"class": "vertical"}},
-        {text: "XML", weight: 2},
-        {text: "SQL", weight: 3},
-        {text: "ElasticSearch", weight: 2, html: {"class": "vertical"}},
-        {text: "Kibana", weight: 2},
-        {text: "Thrift", weight: 1},
-        {text: "EC2", weight: 5},
-        {text: "Heroku", weight: 2},
-        {text: "RabbitMQ", weight: 1},
-        {text: "Fusion Charts", weight: 4, html: {"class": "vertical"}},
-        {text: "Meteor JS", weight: 2},
-        {text: "Reaction Commerce", weight: 1},
-        {text: "Docker", weight: 3},
-        {text: "Microservices", weight: 9},
-        {text: "Functional Programming", weight: 4},
-        {text: "UnderscoreJS", weight: 2},
-        {text: "BackboneJS", weight: 1, html: {"class": "vertical"}},
-        {text: "Handlebars", weight: 1},
-        {text: "BigQuery", weight: 2},
-        {text: "Agile", weight: 6},
-        {text: "Gherkin", weight: 3, html: {"class": "vertical"}},
-        {text: "Design Patterns", weight: 4},
-        {text: "Postgre", weight: 1},
-        {text: "Weblogic", weight: 2},
-        {text: "Jersy", weight: 1},
-        {text: "Charts JS", weight: 2},
-        {text: "DynamoDB", weight: 1},
-        {text: "Chrome Plugins", weight: 1},
-        {text: "Swagger", weight: 1},
-        {text: "NPM", weight: 7},
-        {text: "AngularJS", weight: 1},
-        {text: "SLF4J", weight: 1}
-      ];
-      $(function() {
-        $("#my_favorite_latin_words").jQCloud(word_list);
-      });
+        var word_list = [{
+                text: "Java",
+                weight: 10,
+                link: "https://github.com/DukeLeNoir/jQCloud"
+            },
+            {
+                text: "Javascript",
+                weight: 10
+            },
+            {
+                text: "NodeJS",
+                weight: 8,
+                html: {
+                    "class": "vertical"
+                }
+            },
+            {
+                text: "ReactJS",
+                weight: 8
+            },
+            {
+                text: "Gulp",
+                weight: 5
+            },
+            {
+                text: "Babel",
+                weight: 2,
+                html: {
+                    "class": "vertical"
+                }
+            },
+            {
+                text: "Algorithms",
+                weight: 6
+            },
+            {
+                text: "Data Structures",
+                weight: 6
+            },
+            {
+                text: "ExtJS",
+                weight: 7
+            },
+            {
+                text: "DHTMLX",
+                weight: 7
+            },
+            {
+                text: "J2EE",
+                weight: 5
+            },
+            {
+                text: "Webpack",
+                weight: 2
+            },
+            {
+                text: "Spring",
+                weight: 5,
+                html: {
+                    "class": "vertical"
+                }
+            },
+            {
+                text: "JSOUP",
+                weight: 2
+            },
+            {
+                text: "Gradle",
+                weight: 4
+            },
+            {
+                text: "Maven",
+                weight: 4
+            },
+            {
+                text: "Groovy",
+                weight: 3,
+                html: {
+                    "class": "vertical"
+                }
+            },
+            {
+                text: "Ant",
+                weight: 3
+            },
+            {
+                text: "REST",
+                weight: 5
+            },
+            {
+                text: "ExpressJS",
+                weight: 4
+            },
+            {
+                text: "PassportJS",
+                weight: 1,
+                html: {
+                    "class": "vertical"
+                }
+            },
+            {
+                text: "Q",
+                weight: 5
+            },
+            {
+                text: "Async",
+                weight: 1
+            },
+            {
+                text: "CucumberJS",
+                weight: 5
+            },
+            {
+                text: "SASS",
+                weight: 3
+            },
+            {
+                text: "ES Lint",
+                weight: 1
+            },
+            {
+                text: "JSF",
+                weight: 1
+            },
+            {
+                text: "Flux",
+                weight: 1,
+                html: {
+                    "class": "vertical"
+                }
+            },
+            {
+                text: "Primefaces",
+                weight: 1,
+                html: {
+                    "class": "vertical"
+                }
+            },
+            {
+                text: "DWR",
+                weight: 2
+            },
+            {
+                text: "JQuery",
+                weight: 9,
+                html: {
+                    "class": "vertical"
+                }
+            },
+            {
+                text: "JQuery Mobile",
+                weight: 1
+            },
+            {
+                text: "Bootstrap",
+                weight: 4
+            },
+            {
+                text: "Material Design",
+                weight: 4
+            },
+            {
+                text: "GetMDL",
+                weight: 2
+            },
+            {
+                text: "AWS",
+                weight: 4
+            },
+            {
+                text: "GCP",
+                weight: 4
+            },
+            {
+                text: "JUnit",
+                weight: 1
+            },
+            {
+                text: "Mocha",
+                weight: 1
+            },
+            {
+                text: "Jasmine",
+                weight: 1
+            },
+            {
+                text: "Nunjucks",
+                weight: 1
+            },
+            {
+                text: "SuperTest",
+                weight: 1
+            },
+            {
+                text: "Progalenor",
+                weight: 1
+            },
+            {
+                text: "Perfjankie",
+                weight: 1
+            },
+            {
+                text: "Protractor",
+                weight: 8
+            },
+            {
+                text: "Appium",
+                weight: 1
+            },
+            {
+                text: "Jenkins",
+                weight: 5,
+                html: {
+                    "class": "vertical"
+                }
+            },
+            {
+                text: "Logback",
+                weight: 1
+            },
+            {
+                text: "GruntJS",
+                weight: 1
+            },
+            {
+                text: "Chai JS",
+                weight: 5,
+                html: {
+                    "class": "vertical"
+                }
+            },
+            {
+                text: "ES6",
+                weight: 5
+            },
+            {
+                text: "Redis",
+                weight: 3
+            },
+            {
+                text: "MongoDB",
+                weight: 4
+            },
+            {
+                text: "My SQL",
+                weight: 3
+            },
+            {
+                text: "Hibernate",
+                weight: 2,
+                html: {
+                    "class": "vertical"
+                }
+            },
+            {
+                text: "JPA",
+                weight: 2
+            },
+            {
+                text: "Mongoose",
+                weight: 4
+            },
+            {
+                text: "Express JWT",
+                weight: 1,
+                html: {
+                    "class": "vertical"
+                }
+            },
+            {
+                text: "Twitter API",
+                weight: 2,
+                html: {
+                    "class": "vertical"
+                }
+            },
+            {
+                text: "CSS3",
+                weight: 8
+            },
+            {
+                text: "HTML5",
+                weight: 8
+            },
+            {
+                text: "Redux",
+                weight: 5
+            },
+            {
+                text: "Flux",
+                weight: 3
+            },
+            {
+                text: "Wiremock",
+                weight: 1
+            },
+            {
+                text: "Websockets",
+                weight: 1,
+                html: {
+                    "class": "vertical"
+                }
+            },
+            {
+                text: "Cheerio",
+                weight: 1
+            },
+            {
+                text: "Nodemon",
+                weight: 1
+            },
+            {
+                text: "PhoneGap",
+                weight: 1,
+                html: {
+                    "class": "vertical"
+                }
+            },
+            {
+                text: "XML",
+                weight: 2
+            },
+            {
+                text: "SQL",
+                weight: 3
+            },
+            {
+                text: "ElasticSearch",
+                weight: 2,
+                html: {
+                    "class": "vertical"
+                }
+            },
+            {
+                text: "Kibana",
+                weight: 2
+            },
+            {
+                text: "Thrift",
+                weight: 1
+            },
+            {
+                text: "EC2",
+                weight: 5
+            },
+            {
+                text: "Heroku",
+                weight: 2
+            },
+            {
+                text: "RabbitMQ",
+                weight: 1
+            },
+            {
+                text: "Fusion Charts",
+                weight: 4,
+                html: {
+                    "class": "vertical"
+                }
+            },
+            {
+                text: "Meteor JS",
+                weight: 2
+            },
+            {
+                text: "Reaction Commerce",
+                weight: 1
+            },
+            {
+                text: "Docker",
+                weight: 3
+            },
+            {
+                text: "Microservices",
+                weight: 9
+            },
+            {
+                text: "Functional Programming",
+                weight: 4
+            },
+            {
+                text: "UnderscoreJS",
+                weight: 2
+            },
+            {
+                text: "BackboneJS",
+                weight: 1,
+                html: {
+                    "class": "vertical"
+                }
+            },
+            {
+                text: "Handlebars",
+                weight: 1
+            },
+            {
+                text: "BigQuery",
+                weight: 2
+            },
+            {
+                text: "Agile",
+                weight: 6
+            },
+            {
+                text: "Gherkin",
+                weight: 3,
+                html: {
+                    "class": "vertical"
+                }
+            },
+            {
+                text: "Design Patterns",
+                weight: 4
+            },
+            {
+                text: "Postgre",
+                weight: 1
+            },
+            {
+                text: "Weblogic",
+                weight: 2
+            },
+            {
+                text: "Jersy",
+                weight: 1
+            },
+            {
+                text: "Charts JS",
+                weight: 2
+            },
+            {
+                text: "DynamoDB",
+                weight: 1
+            },
+            {
+                text: "Chrome Plugins",
+                weight: 1
+            },
+            {
+                text: "Swagger",
+                weight: 1
+            },
+            {
+                text: "NPM",
+                weight: 7
+            },
+            {
+                text: "AngularJS",
+                weight: 1
+            },
+            {
+                text: "SLF4J",
+                weight: 1
+            }
+        ];
+        $(function() {
+            $("#my_favorite_latin_words").jQCloud(word_list);
+        });
     </script>
 
 </body>
